@@ -1,0 +1,19 @@
+.user-form #cal1Container {
+  background-color: #FFFFFF;
+  border: 1px solid #A0A0A0;
+  font-size: 11px;
+  padding: 2px;
+  width: 150px;
+  height: 170px;
+  display: none;
+  position: absolute;
+  z-index: 1000;
+}
+
+.yui-skin-sam .yui-calendar .calnavright {
+  right: -4px !important;
+}
+
+.yui-skin-sam .yui-calendar .calnavleft {
+  left: -5px !important;
+}

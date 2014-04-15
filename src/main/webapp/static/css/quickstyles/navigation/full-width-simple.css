@@ -1,0 +1,29 @@
+.CLASS-NAME {
+  text-align: center;
+}
+.CLASS-NAME > li {
+  height: 100%;
+  padding: 0 0.5em;
+}
+.CLASS-NAME > li > a {
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  line-height: 2em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+.CLASS-NAME > li > a:visited {
+  color: #ffffff;
+}
+.CLASS-NAME > li > a:hover {
+  color: #000000;
+  text-shadow: 0 0 2px #FFFFFF;
+}
+.CLASS-NAME > li.selected > a {
+  color: #000000;
+  text-shadow: 0 0 2px #FFFFFF;
+}
+.CLASS-NAME > li.selected > a:visited {
+  color: #000000;
+}

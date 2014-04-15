@@ -1,0 +1,8 @@
+<#if (req.backgrounds)??>
+    <#list req.backgrounds as g>
+        <div class="bgImage-swatch yui3-u" data-uuid="${g.uuid!}"
+             style="${g.cssStyles}"
+             onclick="Y.fire('css-preset:selected', {node: this, cssId: '${g.uuid}', cssText: '${g.cssStyles?js_string}'})">
+        </div>
+    </#list>
+</#if>

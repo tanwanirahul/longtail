@@ -1,0 +1,92 @@
+@import "../lib.less";
+
+.yui3-dropdown {
+  .inline-block();
+  cursor: pointer;
+  position: relative;
+  width: 18px;
+  height: 18px;
+  padding-right: 13px;
+  margin: 0 0 5px;
+  .linear-gradient-with-fallback(#6699BB, #336677);
+}
+
+.yui3-dropdown:after {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: 40%;
+  border-color: #FFFFFF transparent transparent;
+  border-style: solid;
+  border-width: 4px;
+}
+
+.yui3-dropdown:before {
+  content: "";
+  position: absolute;
+  right: 12px;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background-color: #003366;
+}
+
+.yui3-dropdown:HOVER {
+  background: #4477AA;
+}
+
+.yui3-dropdown.active {
+  border: 1px inset #5588BB;
+  background: #4477AA;  
+}
+
+.yui3-dropdown.active:after {
+  border-top: 4px solid #33333;
+}
+
+.yui3-dropdown-panel {
+  position: absolute;
+  background-color: #CCCCCC;
+  border: 2px solid #FFFFFF;
+  width: 200px;
+  z-index: 130; 
+  padding-bottom: 6px;
+}
+
+.yui3-dropdown-panel a {
+  position: absolute;
+  right: 0px;  
+  bottom: 0px;
+  font-size: 8px;
+}
+
+.yui3-dropdown-item-selected {
+  outline: #fff 2px solid;
+  position: relative;
+}
+
+.yui3-dropdown-item-selected:after {
+  content: "";
+  right: 3px;
+  bottom: 3px;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  background: url("../img/icons-edit.png") -5px -1020px no-repeat;
+}
+
+.yui3-dropdown-content {
+  position: absolute;
+  width: 200px;
+  background: url('../img/css-form/inside-slide-open.png') repeat-x scroll 0 0 #41619F !important;
+  padding: 10px;
+  border: 1px solid black;
+  right: 0;
+  display: none;
+  margin-top: 1px;
+}
+
+.yui3-dropdown.active > .yui3-dropdown-content {
+  display: block;
+}

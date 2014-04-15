@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html style="overflow:hidden">
+<head>
+<title>Rich Text Buttons</title>
+<style>
+  body {
+    color: #E4E4E4;
+    background-color: #fff;
+    margin: 0;
+    font-size: 10px;
+    
+  }
+  button {
+    width: 22px;
+    height: 20px;
+    text-indent: -99999px; 
+    padding: 0px;
+    margin: 0;
+  }
+  
+  #text-bold, #text-italic, #text-underline, #text-increase-font, #text-decrease-font,
+  #text-color, #text-link, #text-clearformat {
+    background-image: url("../img/icons.gif");
+  }
+  
+  #text-bold {background-position: -2px -2px;}
+  #text-italic {background-position: -62px -2px;}
+  #text-underline {background-position: -142px -2px;}
+  
+  #text-increase-font {background-position: -62px -460px;text-indent: -2px;}
+  #text-decrease-font {background-position: -82px -460px;text-indent: -2px;}
+  
+  #text-color {background-position: -762px -2px;}
+  #text-link {background-position: -502px -2px;}
+  #text-clearformat {background-position: -42px -2px;}
+  
+</style>
+</head>
+<body>
+  <button id="text-bold" onclick="parent.Y.longtail.AdvEditor.exec('bold', null, this)" title="Bold" style="font-weight: bold;">B</button>
+  <button id="text-italic"  onclick="parent.Y.longtail.AdvEditor.exec('italic', null, this)" title="Italic" style="font-style: italic;">I</button>
+  <button id="text-underline" onclick="parent.Y.longtail.AdvEditor.exec('underline', null, this)" title="Underline" style="text-decoration: underline;">U</button>
+  <span>|</span>
+  <button id="text-increase-font" onclick="parent.Y.longtail.AdvEditor.exec('increasefontsize', null, this)" title="Increase Font Size" >A+</button>
+  <button id="text-decrease-font" onclick="parent.Y.longtail.AdvEditor.exec('decreasefontsize', null, this)" title="Decrease Font Size" >A-</button>
+  <span>|</span>
+  <button id="text-color" onclick="parent.Y.longtail.AdvEditor.exec('forecolor', prompt('Which Color ?'), this)" title="Text Color">C</button>
+  <button id="text-link"  onclick="parent.Y.longtail.AdvEditor.exec('createlink', null, this)" title="Add Link">link</button>
+  <span>|</span>
+  <button id="text-clearformat"  onclick="parent.Y.longtail.AdvEditor.exec('clearstyles', null, this)" title="Clear Formatting">clear</button>
+</body>
+</html>

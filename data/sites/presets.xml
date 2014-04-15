@@ -1,0 +1,277 @@
+<pages id="1">
+  <in.hashed.longtail.model.styles.CSSPreset id="6">
+    <uuid>4FCioQ1y</uuid>
+    <type>BackgroundColor</type>
+    <attributes id="7">
+      <dateOfCreation class="sql-timestamp" id="8">2010-09-10 15:27:19.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="9">2010-09-10 15:27:19.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags/>
+    </attributes>
+    <generatingFunction>background-color: #D5F1FE;</generatingFunction>
+    <cssStyles>background-color: #D5F1FE;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="30">
+    <uuid>NIu3HyZp</uuid>
+    <type>BackgroundColor</type>
+    <attributes id="31">
+      <dateOfCreation class="sql-timestamp" id="32">2010-09-10 22:09:25.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="33">2011-09-15 22:09:25.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags/>
+    </attributes>
+    <generatingFunction>background-color: #E8E8E8;</generatingFunction>
+    <cssStyles>background-color: #E8E8E8;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="201">
+    <uuid>8aIOMlr8</uuid>
+    <type>Background</type>
+    <attributes id="202">
+      <dateOfCreation class="sql-timestamp" id="204">2010-09-10 14:16:11.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="205">2010-09-10 14:16:11.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/background-pattern.jpg'); background-repeat: repeat-x;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/background-pattern.jpg');  background-repeat: repeat-x;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="213">
+    <uuid>7uOMdVyh</uuid>
+    <type>Background</type>
+    <attributes id="214">
+      <dateOfCreation class="sql-timestamp" id="215">2010-09-10 17:52:15.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="216">2010-09-10 17:52:15.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/cloud-hosting-icon.png'); background-repeat: repeat;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/cloud-hosting-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="225">
+    <uuid>8aIOMlr9</uuid>
+    <type>Background</type>
+    <attributes id="226">
+      <dateOfCreation class="sql-timestamp" id="227">2010-09-10 14:16:11.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="228">2010-09-10 14:16:11.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/bg-header.jpg'); background-repeat: repeat-x;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/bg-header.jpg');  background-repeat: repeat-x;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="243">
+    <uuid>8tM52spm</uuid>
+    <type>BackgroundColor</type>
+    <attributes id="244">
+      <dateOfCreation class="sql-timestamp" id="245">2010-09-10 14:43:36.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="246">2010-09-10 14:43:36.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>      
+      <tags/>
+    </attributes>
+    <generatingFunction>background-color: #4B83FC;</generatingFunction>    
+    <cssStyles>background-color: #4B83FC;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="258">
+    <uuid>JJFnARb7</uuid>
+    <type>Background</type>
+    <attributes id="259">
+      <dateOfCreation class="sql-timestamp" id="260">2010-09-10 17:45:49.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="261">2010-09-10 17:45:49.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/increase-traffic-icon.png'); background-repeat: repeat;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/increase-traffic-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="262">
+    <uuid>NPeiZTdy</uuid>
+    <type>Background</type>
+    <attributes id="263">
+      <dateOfCreation class="sql-timestamp" id="264">2010-09-10 17:42:40.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="265">2010-09-10 17:42:40.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/business-icon.png'); background-repeat: repeat;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/business-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="266">
+    <uuid>Np7oepYi</uuid>
+    <type>Background</type>
+    <attributes id="267">
+      <dateOfCreation class="sql-timestamp" id="268">2010-09-10 17:37:13.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="269">2010-09-10 17:37:13.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/go-social-icon.png'); background-repeat: repeat;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/go-social-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="270">
+    <uuid>PhC1Cb6C</uuid>
+    <type>Background</type>
+    <attributes id="271">
+      <dateOfCreation class="sql-timestamp" id="272">2010-09-10 17:16:01.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="273">2010-09-10 17:16:01.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/business.png'); background-repeat: repeat;</generatingFunction>
+    
+    <cssStyles>background-image: url('/static/img/sites/hashedin/business.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="274">
+    <uuid>Sab81sbN</uuid>
+    <type>Background</type>
+    <attributes id="275">
+      <dateOfCreation class="sql-timestamp" id="276">2010-09-10 17:40:33.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="277">2010-09-10 17:40:33.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/mobile-friendly-icon.png'); background-repeat: repeat;</generatingFunction>
+    
+    <cssStyles>background-image: url('/static/img/sites/hashedin/mobile-friendly-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="278">
+    <uuid>aaqyXjws</uuid>
+    <type>Background</type>
+    <attributes id="279">
+      <dateOfCreation class="sql-timestamp" id="280">2010-09-10 17:45:37.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="281">2010-09-10 17:45:37.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/increase-traffic-icon.png'); background-repeat: repeat;</generatingFunction>
+    
+    <cssStyles>background-image: url('/static/img/sites/hashedin/increase-traffic-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="550">
+    <uuid>m6jj2JME</uuid>
+    <type>Background</type>
+    <attributes id="551">
+      <dateOfCreation class="sql-timestamp" id="552">2010-09-10 17:32:23.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="553">2010-09-10 17:32:23.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/ease-of-use-icon.png'); background-repeat: repeat;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/ease-of-use-icon.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="702">
+    <uuid>y0uJfw5p</uuid>
+    <type>Background</type>
+    <attributes id="703">
+      <dateOfCreation class="sql-timestamp" id="704">2010-09-10 17:19:32.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="705">2010-09-10 17:19:32.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags>Texture</tags>
+    </attributes>
+    <generatingFunction>background-image: url('/static/img/sites/hashedin/canvas.png'); background-repeat: repeat;</generatingFunction>
+    <cssStyles>background-image: url('/static/img/sites/hashedin/canvas.png');  background-repeat: repeat;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+
+  <in.hashed.longtail.model.styles.CSSPreset id="1182">
+    <uuid>3loeSRe9</uuid>
+    <type>FontColor</type>
+    <attributes id="1183">
+      <dateOfCreation class="sql-timestamp" id="1184">2010-09-13 17:29:46.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="1185">2010-09-13 17:29:46.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags/>
+    </attributes>
+    <generatingFunction>color: #44FF00;</generatingFunction>
+    <cssStyles>color: #44FF00;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="1263">
+    <uuid>9CunjYaV</uuid>
+    <type>Background</type>
+    <attributes id="1264">
+      <dateOfCreation class="sql-timestamp" id="1265">2010-09-13 16:45:28.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="1266">2010-09-13 16:45:28.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags>Image</tags>
+    </attributes>
+    <generatingFunction>background-image: url('http://rhythm.atinder.com/xhtml/images/skins/blue/big-button.png'); background-repeat: no-repeat; background-position: center top;</generatingFunction>
+    <cssStyles>background-image: url('http://rhythm.atinder.com/xhtml/images/skins/blue/big-button.png');  background-repeat: no-repeat;  background-position: center top;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="1683">
+    <uuid>QFbLfjtS</uuid>
+    <type>FontColor</type>
+    <attributes id="1684">
+      <dateOfCreation class="sql-timestamp" id="1685">2010-09-13 17:30:16.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="1686">2010-09-13 17:30:16.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags/>
+    </attributes>
+    <generatingFunction>color: #1C943C;</generatingFunction>
+    
+    <cssStyles>color: #1C943C;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="1803">
+    <uuid>VlCkb0mF</uuid>
+    <type>FontColor</type>
+    <attributes id="1804">
+      <dateOfCreation class="sql-timestamp" id="1805">2010-09-13 17:13:14.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="1806">2010-09-13 17:13:14.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags/>
+    </attributes>
+    <generatingFunction>color: #B4B4B4;</generatingFunction>
+    <cssStyles>color: #B4B4B4;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="1147">
+    <uuid>c5tSgXFF</uuid>
+    <type>BackgroundColor</type>
+    <attributes id="1148">
+      <dateOfCreation class="sql-timestamp" id="1149">2010-09-13 17:46:07.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="1150">2010-09-13 17:46:07.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      <tags/>
+    </attributes>
+    <generatingFunction>background-color: #000A16;</generatingFunction>
+    <cssStyles>background-color: #000A16;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+  <in.hashed.longtail.model.styles.CSSPreset id="1339">
+    <uuid>gyysOLcM</uuid>
+    <type>FontColor</type>
+    <attributes id="1340">
+      <dateOfCreation class="sql-timestamp" id="1341">2010-09-13 17:29:16.0</dateOfCreation>
+      <lastModifiedDate class="sql-timestamp" id="1342">2010-09-13 17:29:16.0</lastModifiedDate>
+      <access>Private</access>
+      <rating>0</rating>
+      
+      <tags/>
+    </attributes>
+    <generatingFunction>color: #80FF80;</generatingFunction>
+    
+    <cssStyles>color: #80FF80;</cssStyles>
+  </in.hashed.longtail.model.styles.CSSPreset>
+
+</pages>

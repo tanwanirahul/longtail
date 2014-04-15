@@ -1,0 +1,55 @@
+.CLASS-NAME {
+  background-color: #000000;
+  background-color: rgba(255, 255, 255, 0);
+  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, rgba(255, 255, 255, 0.3)), color-stop(50%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 0.3)));
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  background-image: linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3));
+  border: 1px solid #555555;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.CLASS-NAME > li {
+  color: #808080;
+  margin: 1px 0 -1px;
+}
+.CLASS-NAME > li > a {
+  -moz-border-radius: 7px 7px 0 0;
+  -webkit-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+  color: #c0c0c0;
+  display: block;
+  line-height: 2.5em;
+  margin-right: 2px;
+  padding: 0 1em 1px;
+  text-decoration: none;
+}
+.CLASS-NAME > li > a:visited {
+  color: #c0c0c0;
+}
+.CLASS-NAME > li > a:hover {
+  background-color: #EEEEEE;
+  border-bottom: 1px solid #CCCCCC;
+}
+.CLASS-NAME > li.selected > a {
+  background-color: #ffffff;
+  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #b0b0b0), color-stop(33%, #ffffff), color-stop(100%, #ffffff));
+  background-image: -webkit-linear-gradient(top, #b0b0b0, #ffffff 33%, #ffffff);
+  background-image: -moz-linear-gradient(top, #b0b0b0, #ffffff 33%, #ffffff);
+  background-image: -ms-linear-gradient(top, #b0b0b0, #ffffff 33%, #ffffff);
+  background-image: -o-linear-gradient(top, #b0b0b0, #ffffff 33%, #ffffff);
+  background-image: linear-gradient(top, #b0b0b0, #ffffff 33%, #ffffff);
+  border-color: #999999 #999999 transparent;
+  border-style: solid;
+  border-width: 1px 1px 0;
+  -moz-box-shadow: 0 -1px 1px #000000, inset 0 1px 1px #ffffff;
+  -webkit-box-shadow: 0 -1px 1px #000000, inset 0 1px 1px #ffffff;
+  box-shadow: 0 -1px 1px #000000, inset 0 1px 1px #ffffff;
+  color: #808080;
+}
+.CLASS-NAME > li.selected > a:visited {
+  color: #808080;
+}

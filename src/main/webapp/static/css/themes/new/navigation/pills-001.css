@@ -1,0 +1,27 @@
+.el-navigation-data-item {
+  text-align: right;
+}
+.el-navigation-data-item > li {
+  border-left: 1px solid #D0D0D0;
+  padding: 0 5px;
+}
+.el-navigation-data-item > li:first-child {
+  border-left: none;
+}
+.el-navigation-data-item > li > a {
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  color: #008099;
+  display: block;
+  line-height: 2em;
+  margin: 0.3px 0.2px 0.3px 0;
+  padding: 0 1em 0.1em;
+  text-decoration: none;
+}
+.el-navigation-data-item > li > a:visited {
+  color: #008099;
+}
+.el-navigation-data-item > li > a:hover, .el-navigation-data-item > li.selected > a {
+  background-color: #D9DFDF;
+}

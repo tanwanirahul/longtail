@@ -1,0 +1,339 @@
+.status-bar {
+  display: block;
+}
+
+.status-bar > DIV {
+  margin: 3px;
+}
+
+.grab, .close, .delete, .edit-settings, .edit-styles, .refresh, .drag-move, .toggle, .section-settings {
+  background-image: url("../img/icons-edit.png");
+  background-repeat: no-repeat;
+  float: left;
+  margin: 0 2px;
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.edit-styles { background-position: center -860px; .opacity(0.8); }
+.edit-styles:HOVER { .opacity(1.0); }
+
+.edit-settings { background-position: center -818px; .opacity(0.8); }
+.edit-settings:HOVER { .opacity(1.0); }
+
+.section-settings { background-position: center -884px; .opacity(0.8); }
+.section-settings:HOVER { .opacity(1.0); }
+
+.delete, .close { background-position: center -839px; .opacity(0.8); }
+.delete:HOVER, .close:HOVER { .opacity(1.0); }
+
+.refresh { background-position: center -185px; display: none; }
+.drag-move { cursor: move; background-position: center; }
+
+.toggle {
+  background-position: center -1px;
+  position: absolute;
+  right: 0px;
+  top: -5px;
+  display: none;
+}
+.toggle:HOVER { background-position: center -21px; }
+
+.move-up, .move-down {
+  border: 10px solid transparent;
+  float: left;
+  margin-left: 4px;
+  position: relative;
+}
+.move-up { border-bottom-color: #679A35; bottom: 6px; }
+.move-down { border-top-color: #679A35; top: 5px; }
+.move-up:HOVER { border-bottom-color: #9ECE9E; }
+.move-down:HOVER { border-top-color: #9ECE9E; }
+
+/** FIXME : Doesn't work on IE **/
+.column > .widget-container:FIRST-CHILD .status-bar div.move-up {display: none;}
+.column > .widget-container:LAST-CHILD .status-bar div.move-down {display: none;}
+.column > .widget-container.position-first > .status-bar .move-up {display: none;}
+.column > .widget-container.widget-container.position-last > .status-bar .move-down {display: none;}
+
+.grab {background-position: center -966px;}
+
+.edit-overlay {
+  background-color: #666666;
+  .border-radius(2px);
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+  z-index: 200;
+}
+
+.thumb {
+  width: 1px;
+  position: absolute;
+  margin-left: -2px;
+  top: 0px !important;
+  cursor: e-resize;
+}
+
+.thumb-rail {
+  position: relative;
+}
+
+.thumb.yui3-dd-dragging {
+  height: 600px;
+  border-left: 1px dashed #ADACA8;
+}
+
+.thumb-img {
+  width: 20px;
+  height: 12px;
+  position: relative;
+  left: -11px;
+  background: url("../img/icons-edit.png") no-repeat scroll 0px -803px transparent;
+}
+
+.editing-element .edit-overlay {
+  visibility: hidden;
+}
+
+.yui3-styleframe {
+  position: absolute;
+  overflow: visible;
+  z-index: 11;
+}
+
+.yui3-styleframe .tc {
+  background: url("../img/icons-edit.png") no-repeat center -735px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  cursor: move;
+}
+
+.yui3-frame-link-element-frames .tc, .yui3-frame-element-frames .tc, .yui3-frame-form-frames .tc {
+  background: url("../img/icons-edit.png") no-repeat scroll center -734px rgba(0, 0, 140, 0.8);
+  height: 20px;
+  left: -21px;
+  top: 20px;
+  width: 20px;
+  visibility: visible;
+}
+
+.yui3-frame-widget-frames-outside .style-bar, .yui3-frame-widget-frames .style-bar {
+  overflow: hidden;  
+}
+
+.yui3-frame-link-element-frames .style-bar, .yui3-frame-element-frames .style-bar, 
+.yui3-frame-form-frames .style-bar {
+  visibility: hidden;
+}
+
+.yui3-frame-widget-frames-outside .delete, .yui3-frame-widget-frames-outside .grab {
+  display: none;
+}
+
+.yui3-frame-widget-frames .style-frame-box .top {
+  background: none;
+}
+
+.yui3-frame-widget-frames .yui3-resize-handle-r, .yui3-frame-widget-frames .yui3-resize-handle-br {
+  display: none;
+}
+
+.yui3-styleframe-content {
+  position: absolute;
+  z-index: 100;
+  height: 0;
+}
+
+.yui3-styleframe .style-frame-box {
+  background: rgba(0,0,0,0.5);
+  position: relative;
+  visibility: hidden;
+}
+
+.yui3-dd-dragging.yui3-styleframe .style-frame-box {
+  max-height: 50px;  
+  max-width: 100px;
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+.yui3-dd-dragging.yui3-styleframe .style-bar {
+  display: none;
+}
+
+.yui3-styleframe.yui3-dd-dragging .yui3-styleframe-content {
+  height: auto;
+}
+
+.yui3-styleframe.yui3-dd-dragging .style-frame-box {
+  visibility: visible;
+}
+
+
+.style-frame-box {
+  .top, .bottom, .left, .right {
+    position: absolute;
+    right: -1px; bottom: -1px; left: -1px; top: -1px;
+    background: rgba(0,0,0,0.6);
+    visibility: visible;
+  }
+}
+
+.yui3-frame-element-frames .style-frame-box,
+.yui3-frame-form-frames .style-frame-box {
+  .top, .bottom, .left, .right {
+    background: rgba(0,0,140,0.6);
+  }
+}
+
+.style-frame-box > .top { bottom: auto; height: 2px; }
+.style-frame-box > .bottom { top: auto; height: 2px; }
+.style-frame-box > .left { right: auto; width: 2px; }
+.style-frame-box > .right { left: auto; width: 2px; }
+
+.yui3-resize-handle {
+  background-color: transparent;
+  visibility: visible;
+}
+
+.yui3-resize-handle-b, .yui3-resize-handle-t {
+  height: 5px;
+}
+
+.yui3-resize-handle-r, .yui3-resize-handle-l {
+  width: 5px;
+}
+
+.yui3-resize-handle-br, .yui3-resize-handle-bl, .yui3-resize-handle-tr, .yui3-resize-handle-tl {
+  width: 0px;
+  height: 0px;
+}
+
+.yui3-styleframe .style-bar {
+  border: 1px solid #000000;
+  .box-shadow(0 1px 0 #555555 inset);
+  .border-radius(6px 6px 0 0);
+  cursor: pointer;
+  display: block;
+  .linear-gradient-with-fallback(#333333, #AAAAAA);
+  .opacity(1);
+  padding: 0 2px;
+  position: absolute;
+  left: -1px;
+  right: -1px;
+  bottom: 100%;
+}
+
+.yui3-frame-link-element-frames .style-bar, .yui3-frame-element-frames .style-bar, .yui3-frame-form-frames .style-bar {
+  height: 20px;
+}
+
+.widget-styles-enabled .yui3-styleframe .style-bar {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.widget-styles-enabled .yui3-styleframe .style-bar:HOVER {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.yui3-styleframe .yui3-dd-dragging .style-bar, .yui3-styleframe .yui3-dd-dragging .style-bar:HOVER {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.yui3-styleframe .yui3-dd-dragging .style-bar .delete,
+.yui3-styleframe .yui3-dd-dragging .style-bar .edit-styles,
+.yui3-styleframe .yui3-dd-dragging .style-bar .grab {
+  .opacity(0.2);
+}
+
+.yui3-styleframe-dragging {
+  background: rgba(125,125,0,0.1);
+}
+
+.yui3-styleframe .edit-settings, .yui3-styleframe .edit-styles, .yui3-styleframe .delete, .yui3-styleframe .grab {
+  float: right;
+  margin: 0 2px;
+  height: 20px;
+  width: 20px;
+}
+
+.yui3-styleframe .grab {
+  cursor: -moz-grab;
+  visibility: visible;
+}
+
+.yui3-styleframe .style-bar-below {
+  display: block;
+  height: 25px;
+  width: 100px;
+  float: right;
+  background: rgba(0,0,0,0.6);
+  padding: 0 3px;
+}
+
+.yui3-styleframe-hidden { display: none; }
+
+.yui3-widget-dragging .yui3-styleframe{ display: none; }
+
+.content-area .leaf-container.editing .status-bar {
+  display: none;
+}
+
+.col-change {
+  position: absolute;
+  right: 10px;
+  top: -6px;
+}
+
+.section-settings-overlay {
+  background-color: #192233;
+  border: 1px solid #87696B;
+  cursor: pointer;
+  display: none;
+  font: 11px "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+  height: 18px;
+  left: 11px;
+  margin-top: 25px;
+  padding: 5px 0 5px 6px;
+  position: relative;
+}
+
+.col-change:HOVER .section-settings-overlay {
+  display: block;
+}
+
+.section-settings-overlay .arrow-top {
+  border-color: transparent transparent #192233;
+  border-style: solid;
+  border-width: 0 12px 7px;
+  position: absolute;
+  right: 26px;
+  top: -6px;
+}
+
+.col-change .section-settings {
+  float: right;
+  margin-right: 15px;
+  width: 30px;
+}
+.col-change .edit-styles {
+  margin-left: 6px;
+}
+
+.thumb-rail {
+ visibility: hidden;
+}
+
+.in-canvas .thumb-rail, .resizer.yui3-dd-dragging .thumb-rail {
+  visibility: visible;
+}
+
+.yui3-frame-link-element-frames .edit-styles, .yui3-frame-link-element-frames .delete, .yui3-frame-link-element-frames .grab, .yui3-frame-link-element-frames .tc,
+.yui3-frame-element-frames .edit-styles, .yui3-frame-element-frames .delete, .yui3-frame-element-frames .grab,
+.yui3-frame-form-frames .edit-styles, .yui3-frame-form-frames .delete, .yui3-frame-form-frames .grab,
+.yui3-frame-canvas-frames .delete, .yui3-frame-canvas-frames .grab, .yui3-frame-canvas-frames .tc {
+  display: none;
+}

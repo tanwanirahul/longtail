@@ -1,0 +1,187 @@
+.CLASS-NAME {
+	border-style: solid;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+	border-color: #91C9DA;
+	background-color: #D5F1FE;
+	-moz-border-radius-topright: 8px;
+	-webkit-border-top-right-radius: 8px;
+	border-top-right-radius: 8px;
+	-moz-border-radius-bottomright: 8px;
+	-webkit-border-bottom-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	-moz-border-radius-topleft: 8px;
+	-webkit-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	border-width: 1.0px;
+	-moz-border-radius-bottomleft: 8px;
+	-webkit-border-bottom-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+.CLASS-NAME fieldset label {
+  font-weight: bolder;
+}
+.CLASS-NAME fieldset .field {
+  position: relative;
+  padding-top: 5px;
+}
+.CLASS-NAME fieldset .field > label, .CLASS-NAME fieldset .field > input[type=text], .CLASS-NAME fieldset .field > input[type=password] {
+  display: block;
+}
+.CLASS-NAME fieldset .field-rememberme > label {
+  display: inline-block;
+  font-size: 90%;
+  font-weight: normal;
+}
+.CLASS-NAME fieldset .field > input[type=email], .CLASS-NAME fieldset .field > select, .CLASS-NAME fieldset .field > textarea {
+  display: block;
+}
+.CLASS-NAME fieldset .field-submit label, .CLASS-NAME fieldset .field-reset label, .CLASS-NAME fieldset .field-cancel label {
+  display: none;
+}
+.CLASS-NAME fieldset .field-submit, .CLASS-NAME fieldset .field-reset, .CLASS-NAME fieldset .field-cancel {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  float: left;
+}
+.CLASS-NAME input[type="submit"] {
+	font-size: 0.95em;
+	margin: 5px 0 0;
+	padding: 4px 12px;
+	background-color: #1a5ad9;
+	background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #759ae9), color-stop(50%, #376fe0), color-stop(50%, #1a5ad9), color-stop(100%, #2463de));
+	background-image: -webkit-linear-gradient(top, #759ae9 0, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+	background-image: -moz-linear-gradient(top, #759ae9 0, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+	background-image: -ms-linear-gradient(top, #759ae9 0, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+	background-image: -o-linear-gradient(top, #759ae9 0, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+	background-image: linear-gradient(top, #759ae9 0, #376fe0 50%, #1a5ad9 50%, #2463de 100%);
+	border-color: #1f58cc #1b4db3 #174299;
+	border-style: solid;
+	border-width: 1px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	-moz-box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+	-webkit-box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+	box-shadow: inset 0 0 2px 0 rgba(57, 140, 255, 0.8);
+	color: #ffffff;
+	text-shadow: 0 -1px 1px #1a5ad9; 
+}
+.CLASS-NAME input[type="submit"]:HOVER {
+	background-color: #044bd9;
+	background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, #5d89e8), color-stop(50%, #2261e0), color-stop(50%, #044bd9), color-stop(100%, #0d53de));
+	background-image: -webkit-linear-gradient(top, #5d89e8 0, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+	background-image: -moz-linear-gradient(top, #5d89e8 0, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+	background-image: -ms-linear-gradient(top, #5d89e8 0, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+	background-image: -o-linear-gradient(top, #5d89e8 0, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+	background-image: linear-gradient(top, #5d89e8 0, #2261e0 50%, #044bd9 50%, #0d53de 100%);
+}
+.CLASS-NAME input[type="submit"]:ACTIVE {
+	border-color: #1b4db3 #174299 #133780;
+	-moz-box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee;
+	-webkit-box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee;
+	box-shadow: inset 0 0 5px 2px #1a47a0, 0 1px 0 #eeeeee;
+} 
+.CLASS-NAME fieldset .field-reset {
+  margin-right: 10px;
+}
+.CLASS-NAME fieldset input::-webkit-input-placeholder, .CLASS-NAME input:-moz-placeholder {
+  color: #999999;
+  font-size: 80%;
+}
+.CLASS-NAME fieldset input.error {
+  background-color: #fcc;
+}
+.CLASS-NAME .errors {
+  color: #A31919;
+  border: 1px solid #A31919;
+  font-size: 90%;
+  padding: 5px 5px 5px 30px;
+  background: #FFD;
+  position: relative;
+}
+.CLASS-NAME .errors:AFTER {
+  content: "";
+  background: #ffffdd url("http://content.designoncloud.com/static/img/ico_validation.png") no-repeat 5px 5px;
+  height: 20px;
+  width: 25px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.CLASS-NAME .thank-you {
+  padding: 20px;
+}
+.CLASS-NAME .field > .help-text {
+  font-size: 75%;
+  font-style: italic;
+  text-indent: .5em;
+}
+.CLASS-NAME input[type=text],
+.CLASS-NAME input[type=email],
+.CLASS-NAME input[type=password],
+.CLASS-NAME input[type=userId] {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 4px 4px #cccccc inset;
+  -webkit-box-shadow: 0 4px 4px #cccccc inset;
+  box-shadow: 0 4px 4px #cccccc inset;
+  border: 1px solid #A7A3A3;
+  font-size: 0.9em;
+  padding: 4px 4px 3px;
+}
+.CLASS-NAME input[type=email], .CLASS-NAME input[type="password"], .CLASS-NAME input[type=text] {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.CLASS-NAME textarea {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 4px 4px #cccccc inset;
+  -webkit-box-shadow: 0 4px 4px #cccccc inset;
+  box-shadow: 0 4px 4px #cccccc inset;
+  border: 1px solid #A7A3A3;
+  padding: 4px 4px 2px;
+}
+.CLASS-NAME label {
+  line-height: 1.7em;
+}
+.CLASS-NAME .field-name,
+.CLASS-NAME .field-email,
+.CLASS-NAME .field-phone,
+.CLASS-NAME .field-comments,
+.CLASS-NAME .field-password,
+.CLASS-NAME .field-text,
+.CLASS-NAME .field-userId {
+  border-bottom: 1px dotted #616161;
+  margin-bottom: 10px;
+  padding: 0 0 10px;
+}
+.CLASS-NAME .field-name input {
+  width: 230px;
+}
+.CLASS-NAME .field-email input {
+  width: 83%;
+}
+.CLASS-NAME .field-text input {
+  width: 83%;
+}
+.CLASS-NAME .field-userId input {
+  width: 220px;
+}
+.CLASS-NAME .field-phone input {
+  width: 150px;
+}
+.CLASS-NAME .field-password input {
+  width: 200px;
+}
+.CLASS-NAME .field-comments textarea {
+  width: 83%;
+}

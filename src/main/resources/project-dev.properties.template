@@ -1,0 +1,36 @@
+# Mail Server Configurations
+mail.smtp.port               :   465
+mail.smtp.username           :   contact@hashedin.com
+mail.smtp.password           :   yg0l1rt!
+mail.smtp.host               :   smtp.junk.com
+mail.smtp.starttls.enable    :   true
+mail.smtp.auth               :   true
+mail.disabled                :   true
+
+#cache expiration time
+cache.expiry.time            :   0
+
+# location for Static files
+static.location             :   file:D:/sandboxes/longtail/src/main/webapp/static/
+theme.location              :   ${static.location}css/themes/
+yui.location                :   file:D:/sandboxes/longtail/libs/yui/
+fileuploads.location        :   file:D:/sandboxes/longtail/libs/images/
+
+site.domain                 :   local.designoncloud.com
+site.port                   :   80
+site.url                    :   http://local.designoncloud.com
+site.staticContentBaseUrl   :   http://static.local.designoncloud.com/static
+site.contentBaseUrl         :   http://static.local.designoncloud.com/static
+site.imageServerUrl         :   http://static.local.designoncloud.com/static/
+site.rememberMeCookieName   :   rme_l
+
+resources.canMergeResources :   false
+
+mysql.jdbc.driver           :   com.mysql.jdbc.Driver
+mysql.jdbc.url              :   jdbc:mysql://localhost:3306/longtail?useUnicode=true&characterEncoding=UTF-8
+mysql.jdbc.username         :   longtail
+mysql.jdbc.password         :   longtail
+mysql.hibernate.dialect     :   org.hibernate.dialect.MySQLMyISAMDialect
+
+db.datasource               :   mysqlDataSource
+db.dialect                  :   org.hibernate.dialect.MySQLMyISAMDialect

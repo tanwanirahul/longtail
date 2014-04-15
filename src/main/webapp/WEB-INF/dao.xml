@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+  <bean class="in.hashed.longtail.util.SystemEnvPropertyConfigurer">
+	<property name="propertyName" value="project" />
+  </bean>
+  
+<!--  <bean id="jndiDataSource" class="org.springframework.jndi.JndiObjectFactoryBean" lazy-init="true">-->
+<!--     <property name="resourceRef" value="true"/>-->
+<!--      This JNDI name needs to exist in any deployed environment -->
+<!--     <property name="jndiName" value="jdbc/SportsDB"/>-->
+<!--  </bean>-->
+  
+  <bean id="mysqlDataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close" lazy-init="true">
+    <property name="driverClassName" value="${mysql.jdbc.driver}"/>
+    <property name="url" value="${mysql.jdbc.url}"/>
+    <property name="username" value="${mysql.jdbc.username}"/>
+    <property name="password" value="${mysql.jdbc.password}"/>
+    <property name="validationQuery" value="SELECT 1"/>
+    <property name="testOnBorrow" value="true"/>
+  </bean>
+  
+</beans>

@@ -1,0 +1,51 @@
+.admin-skin {
+  font-family: "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: 000;
+}
+
+/** Typography **/
+.admin-skin .h1,.admin-skin .h2, .admin-skin .h3, .admin-skin .h4, .admin-skin .h5, .admin-skin .h6 {
+  font-family: "Tahoma", sans-serif;
+  text-shadow: 1px 1px #ccc;
+}
+
+.admin-skin .h1 {font-size: 28px;font-weight: bold;margin: 0 0 0.3em;}
+.admin-skin .h2 {font-size: 22px;font-style: italic;font-weight: bold;margin: 0 0 0.3em;}
+.admin-skin .h3 {font-size: 20px;font-weight: bold;margin: 0 0 0.2em;}
+.admin-skin .h4 {font-size: 18px;margin: 0 0 0.2em;}
+.admin-skin .h5 {font-size: 16px;font-weight: bold;margin: 0 0 0.2em;}
+.admin-skin .h6 {font-size: 14px;font-weight: bold;letter-spacing: 0.1em;  margin: 0 0 0.2em;}
+.admin-skin .p  {margin: 0 0 0.5em;}
+.admin-skin a  {color: inherit; cursor: pointer; text-decoration: none;}
+.admin-skin a:visited {color: inherit;}
+.admin-skin a:active {color: inherit;}
+.admin-skin label {font-size: 14px; font-weight: bold;}
+.admin-skin .small-text {font-size: 10px;}
+
+/** Colors **/
+
+/** Pagination **/
+.admin-skin .list-pagination {border-bottom: 1px solid #888; color: #000; font-size: 12px; height: 15px; padding: 3px 5px 2px; margin-bottom: 3px;}
+.admin-skin .list-pagination .heading {.inline-block(); margin-right: 20px;}
+.admin-skin .list-pagination .page-links {float: right;}
+.admin-skin .list-pagination .page-links span {background-color: #CCCCCC; color: #000000; padding: 1px 3px;}
+.admin-skin .list-pagination .page-links a {padding: 1px 3px;}
+.admin-skin .list-pagination .page-links a:HOVER {background-color: #AAAAAA; color: #000000 !important;}
+.admin-skin .list-pagination .tags-list {.inline-block();}
+.admin-skin .list-pagination .tag-group {background-color: #999999; border: 1px solid #888888; .inline-block(); .border-radius(3px); margin: 0 5px;}
+.admin-skin .list-pagination .tag-group .tag-item {border-right: 1px solid #444444; .box-shadow(0 1px 1px #BBBBBB inset); padding: 0 15px; text-shadow: 0 1px 0 #000000;}
+.admin-skin .list-pagination .tag-group .tag-item.last, .list-pagination .tag-group .tag-item.last:HOVER {border: none;}
+.admin-skin .list-pagination .tag-group a.tag-item {.linear-gradient-with-fallback(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));}
+.admin-skin .list-pagination .tag-group a.tag-item:HOVER, .list-pagination .tag-group span.tag-item {background: #505050; border-right: 1px solid #444444; .box-shadow(0 1px 1px #999999 inset);}
+
+/** Components **/
+.admin-skin form  {background: none; color: inherit;}
+.admin-skin input[type=text] {padding: 0 2px; .box-shadow(inset 2px 1px #ffc);}
+.admin-skin .tooltip {font-size: 10px; background: #ffc;border: 1px solid #885;padding: 3px;}
+.admin-skin .left-callout::BEFORE {content: "";display: block; margin-left:-20px;width: 0; border-width: 0 0 0 20px; border-color: #000;}
+
+.admin-skin .nav-button {border: 1px solid #885; background: #ffc; padding: 5px 15px; .border-radius(3px); cursor: pointer; .inline-block();} 
+.admin-skin .nav-button:HOVER {border: 1px solid #AA9; background: #ffd;}
+.admin-skin .nav-button:ACTIVE {border: 1px solid #774; background: #eeb;.box-shadow(inset 0 0 10px #888);}

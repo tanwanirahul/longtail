@@ -1,0 +1,671 @@
+<pages>
+
+
+  <form-template>
+    <name>resetpassword</name>
+    <widget class="data-form" id="resetpassword" action="${req.servicesBase}/resetPassword" formName="resetpassword">
+      <field label="DoesNotMatter" fieldName="DoesNotMatter" fieldType="resetPasswordUserid" />
+      <field label="DoesNotMatter" fieldName="DoesNotMatter" fieldType="resetPasswordTime" />
+      <field label="DoesNotMatter" fieldName="DoesNotMatter" fieldType="resetPasswordHash" />
+      <field label="New Password" fieldName="New Password" fieldType="password" />
+      <field label="Change Password" fieldName="Change Password" fieldType="submit" />
+    </widget>
+  </form-template>
+
+  <form-template>
+    <name>changepassword</name>
+    <widget class="data-form" id="changepassword" action="${req.servicesBase}/changePassword" formName="changepassword">
+      <field label="Old Password" fieldName="Old Password" fieldType="oldPassword" />
+      <field label="New Password" fieldName="New Password" fieldType="password" />
+      <field label="Change Password" fieldName="Change Password" fieldType="submit" />
+    </widget>
+  </form-template>
+  <form-template>
+    <name>forgotpassword</name>
+    <widget class="data-form" id="forgotpassword" action="${req.servicesBase}/requestResetPassword" formName="forgotpassword">
+      <field label="Email" fieldName="Email" fieldType="email" required="true" helpText="Enter the Email Id used for registration" />
+      <field label="Reset my Password" fieldName="Reset my Password" fieldType="submit" />
+    </widget>
+  </form-template>
+  <form-template>
+    <name>loginform</name>
+    <widget class="data-form" id="loginform" action="/j_spring_security_check" formName="loginform">
+      <field label="Email" fieldName="Email" fieldType="userId" required="true" helpText="Enter the Email Id to be used for registration" />
+      <field label="Password" fieldName="Password" fieldType="password" required="true" helpText="Your password (5 or more characters)" />
+      <field label="Remember me on this computer" fieldName="Remember me on this computer" fieldType="rememberme" required="false" />
+      <field label="Login" fieldName="Login" fieldType="submit" />
+    </widget>
+  </form-template>
+  <form-template>
+    <name>contactus</name>
+    <widget class="data-form" id="contactus" formName="contactus">
+      <field label="Name" fieldName="Name" fieldType="name" placeholder="Your Full Name" required="true" helpText="Enter your full name" />
+      <field label="Email" fieldName="Email" fieldType="email" placeholder="email@domain.com" required="true" helpText="Enter your email id" />
+      <field label="Phone_No" fieldName="Phone_No" fieldType="phone" helpText="Enter your phone (Optional)" />
+      <field label="Comments" fieldName="Comments" fieldType="comments" required="true" helpText="Enter your comments/feeback" />
+      <field label="Submit Your Request" fieldName="Submit Your Request" fieldType="submit" />
+    </widget>
+  </form-template>
+  <form-template>
+    <name>createmysite</name>
+    <widget class="data-form" id="createmysite" formName="createmysite">
+      <field label="Name" fieldName="Name" fieldType="name" placeholder="Your Full Name" required="true" helpText="Enter your full name" />
+      <field label="Email" fieldName="Email" fieldType="email" placeholder="email@domain.com" required="true" helpText="Enter your email id" />
+      <field label="Phone_No" fieldName="Phone_No" fieldType="phone" placeholder="Phone Number" required="true" helpText="Enter your business contact number" />
+      <field label="Tell Us About Your Business" fieldName="Tell Us About Your Business" placeholder="Business Name, Contact Address, About Your Business and Business Owner, etc" fieldType="comments" required="true" helpText="Your business name, contact address and other details" />
+      <field label="Design my Website" fieldName="Design my Website" fieldType="submit" />
+    </widget>
+  </form-template>
+
+  <form-template>
+    <name>signup</name>
+    <widget class="data-form" id="signup" action="${req.servicesBase}/site/createAccountAndBlankSite" formName="signup">
+      <field label="Name" fieldName="Name" fieldType="name" placeholder="Your Name" required="true" helpText="Enter your full name" />
+      <field label="Email" fieldName="Email" fieldType="email" placeholder="email@domain.com" required="true" helpText="We hate spam too. Your email is safe with us." />
+      <field label="New Password" fieldName="New Password" fieldType="password" required="true" helpText="Use at least 5 character password." />
+      <!--<field label="Retype Password" fieldName="Retype Password" fieldType="confirmPassword" required="true" />-->
+      <field label="InviteCode" fieldName="InviteCode" fieldType="inviteCode" required="true" helpText="Don't have one? Request an Invite now!" />
+      <!--
+        <field label="Industry" fieldName="Industry" fieldType="industry" required="true" /> <field label="Domain" fieldName="Domain" fieldType="domainSelector" required="true" />
+      -->
+      <field label="Register Me" fieldName="Register Me" fieldType="submit" />
+    </widget>
+  </form-template>
+
+  <form-template>
+    <name>autosignup</name>
+    <widget class="data-form" id="autosignup" action="${req.servicesBase}/site/createAccountAndBlankSite" formName="autosignup">
+      <field label="Name" fieldName="Name" fieldType="name" placeholder="Your Name" required="true" helpText="Enter your full name" />
+      <field label="Email" fieldName="Email" fieldType="email" placeholder="email@domain.com" required="true" helpText="We hate spam too. Your email is safe with us." />
+      <field label="Phone_No" fieldName="Phone_No" fieldType="phone" required="true" helpText="Enter your phone number" />
+      <field label="New Password" fieldName="New Password" fieldType="password" required="true" helpText="Use at least 5 character password." />
+      <field label="Start Designing" fieldName="Start Designing" fieldType="submit" />
+    </widget>
+  </form-template>
+
+  <form-template>
+    <name>inviterequest</name>
+    <widget class="data-form" id="inviterequest" formName="inviterequest">
+      <field label="Name" fieldName="Name" fieldType="name" placeholder="Your Name" required="true" helpText="Enter your full name" />
+      <field label="Email" fieldName="Email" fieldType="email" placeholder="email@domain.com"  required="true" helpText="Enter your email to join our invite list." />
+      <field label="Phone_No" fieldName="Phone_No" fieldType="phone" required="true" helpText="Enter your phone number" />
+      <field label="I am interested" fieldName="I am interested" fieldType="submit" />
+    </widget>
+  </form-template>
+
+  <form-template>
+    <name>invitefriends</name>
+    <widget class="data-form" id="invitefriends" formName="invitefriends" action="/">
+      <field fieldType="email" required="true" placeholder="email@domain.com" helpText="Enter email of your friend" />
+      <field label="Send Invite" fieldName="Send Invite" fieldType="submit" />
+    </widget>
+  </form-template>
+
+  <form-template>
+    <name>googleanalytics</name>
+    <widget class="data-form" id="googleanalytics" formName="googleanalytics">
+      <field label="Google Analytics Profile ID" fieldName="Google Analytics Profile ID" fieldType="google_analytics" required="true" helpText="" />
+      <field label="Save" fieldName="Save" fieldType="submit" />
+    </widget>
+  </form-template>
+
+
+
+  <widget-template name="html-content">
+    <title>HTML</title>
+    <description>HTML Content</description>
+    <widget class="widget-tree" uuid="uX8sUDHZZK6">
+      <data-html uuid="uJjtxlgTgJ1">
+        <text>Click to edit and replace with custom HTML</text>
+      </data-html>
+    </widget>
+    <attributes priority="0">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template id="6" name="default-page">
+    <widget class="widget-tree" id="7" uuid="uGM78teRHX6" mode="content-area">
+      <widget-tree id="8" uuid="ugIDid1u35Y" mode="section">
+        <widget-tree id="9" uuid="uaO3GIGqAkf" mode="column" />
+        <widget-tree id="10" uuid="uLesaLX1CZ9" mode="column" />
+      </widget-tree>
+    </widget>
+  </widget-template>
+
+  <widget-template id="11" name="invite-request">
+    <widget class="widget-tree" id="12" uuid="uEhuIDqc9A4">
+      <data-form reference="inviterequest" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="invite-friends">
+    <widget class="widget-tree" uuid="uEhuIDqc9B4">
+      <data-form reference="invitefriends" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="facebook-like-button">
+    <title>Like</title>
+    <description>Facebook Like Button</description>
+    <widget class="data-ftl" uuid="u7eSX2h9CPk" templatePath="/elements/fblike.ftl" />
+    <attributes priority="5">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="image-gallery">
+    <title>Image Gallery</title>
+    <description>A Slide Show of Images</description>
+    <widget class="widget-tree" uuid="uXVmHIreKyx">
+      <widget-tree uuid="ux5gvCjCf6o" mode="slideshow-gallery">
+        <data-image uuid="ulsWlX3EY8J" path="http://content.designoncloud.com/static/img/temp1.jpg" />
+        <data-image uuid="ulsWlX3EY9J" path="http://content.designoncloud.com/static/img/temp2.jpg" />
+        <data-image uuid="ulsWlX3EYAJ" path="http://content.designoncloud.com/static/img/temp3.jpg" />
+        <data-image uuid="ulsWlX3EYBJ" path="http://content.designoncloud.com/static/img/temp4.jpg" />
+      </widget-tree>
+    </widget>
+    <attributes priority="6">
+      <access>Admin</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="page">
+    <widget class="data-ftl" uuid="uVqPJb3t56d" mode="default-layout" templatePath="/elements/Page.ftl" />
+  </widget-template>
+
+  <widget-template name="login">
+    <widget class="widget-tree" uuid="uTDDZqxX5Pq">
+      <data-form reference="loginform" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="googlemap">
+    <widget class="widget-tree" uuid="uZ4FuVJMdxC" />
+  </widget-template>
+
+  <widget-template name="changepassword">
+    <widget class="widget-tree" uuid="uRvMga4kHyk">
+      <data-form reference="changepassword" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="twittersearch">
+    <widget class="widget-tree" uuid="u67Bm3kYLUI" />
+  </widget-template>
+
+  <widget-template name="forgotpassword">
+    <widget class="widget-tree" uuid="ueb6QM3eOjN">
+      <data-form reference="forgotpassword" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="facebook-like-box">
+    <title>Like Box</title>
+    <description>Facebook Like Box</description>
+    <widget class="data-ftl" uuid="uP0HmLROfpT" templatePath="/elements/fblikebox.ftl" />
+    <attributes id="39">
+      <access>Admin</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="image">
+    <title>Image</title>
+    <description>An Image</description>
+    <widget class="widget-tree" uuid="uBjmYjgLD2U">
+      <data-image uuid="uk3B6WOvTAi" path="http://content.designoncloud.com/static/img/no_img.jpg" />
+    </widget>
+    <attributes priority="8">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="content-and-image">
+    <title>Image &amp; Text</title>
+    <description>Image along with some text</description>
+    <widget class="widget-tree" uuid="ug8un0s725k">
+      <data-image uuid="ua2QCLbMG3k" path="http://content.designoncloud.com/static/img/no_img.jpg" />
+      <data-text uuid="uZIwXQUjKDs" type="p">
+        <text>This is just sample text. Click to edit it and replace with
+          the some meaningful content about you, your profession, your
+          business or just about anything.</text>
+      </data-text>
+    </widget>
+    <attributes priority="11">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="list">
+    <title>List</title>
+    <description>A List of Things</description>
+    <widget class="widget-tree" uuid="uOAWbeVmHgB">
+      <widget-tree uuid="u8rj4hZ10gG">
+        <data-text uuid="uyMatNKDC1G" type="p">
+          <text>This is the first Item in the list.</text>
+        </data-text>
+        <data-text uuid="uSwIyiku4iX" type="p">
+          <text>This is the second Item in the list.</text>
+        </data-text>
+        <data-text uuid="uEnSZicXOKk" type="p">
+          <text>You can edit any item.</text>
+        </data-text>
+        <data-text uuid="uGJ1Fw2cKOb" type="p">
+          <text>While editing if you press enter, a new item is created.
+					</text>
+        </data-text>
+      </widget-tree>
+    </widget>
+    <attributes id="56">
+      <access>Admin</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="company-overview">
+    <title>Company Overview</title>
+    <description>Company Overview</description>
+    <widget class="widget-tree" uuid="ucog6lMgphs">
+      <data-text uuid="uco1gvxedoo" priority="3"><text>About {Company Name}</text></data-text>
+      <data-text uuid="ucoXFBccpsk"><text>Founded {YYYY-MM-DD}</text></data-text>
+      <data-text uuid="ucoXFBdcpsk"><text>
+      <![CDATA[
+        {Company Name} was founded in {YYYY-MM-DD} by 
+        {Founder Name} in 
+        {YYYY-MM-DD} and has
+        been providing it's services in the {Industry} 
+        for the last {X} years. We specialize in providing {services} 
+        and have been rated as the best {Industry} company in 
+        {City or State or Locality}. We our focused efforts on {USP} have allowed us
+        to deliver continues value to {clients industry} in the 
+        {City or State or Locality} area for the last {x} years.]]>
+        </text>
+      </data-text>
+    </widget>
+    <attributes priority="10">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="product-description">
+    <title>Product</title>
+    <description>Description and image of a product or service that you offer</description>
+    <widget class="widget-tree" uuid="updg6lMgphs">
+      <data-image uuid="updB6WOvTAi" path="/static/img/no_img.jpg" />
+      <data-text uuid="upd1gvxedoo" priority="3"><text>{Product Name}</text></data-text>
+      <data-text uuid="updXFBccpsk"><text>Price {XXX xx}</text></data-text>
+      <data-text uuid="updXFBccpsk"><text>Offer Price {XXX xx}</text></data-text>
+      <data-text uuid="updXFBccpsk">
+        <text>Offer Price {XXX xx}</text>
+      </data-text>
+      <data-text uuid="updXFBdcpsk"><text>
+        <![CDATA[
+          Our latest and greatest addition to our existing suite of products is {Product Name}. This is one of a
+           kind offering at a very competitive price. Coupled with out {xyz} support, we guarantee that it is
+           value for your money. Contact us at - {contact number} if you want to know more about it.
+        ]]>
+        </text>
+      </data-text>
+    </widget>
+    <attributes priority="10">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="customer-testimonials">
+    <title>Testimonial</title>
+    <description>What our customers say about us</description>
+    <widget class="widget-tree" uuid="updg6lMgphs">
+      <data-text uuid="upd1gvxedoo" priority="3"><text>What our clients are saying</text></data-text>
+      <data-text uuid="updXFBdcpsk"><text>
+        <![CDATA[
+          <p><i>We have been working with {company name} since the last {x} years and the {service name} they provide is excellent.
+          They have been very responsive and have gone to an extra length whenever we needed their support. This has helped us 
+          focus on our business needs. Highly recommeneded.</i></p>
+          <p style="text-align:right; font-weight: bold;">{Customer Name}<br/>{Position} at {Company Name}</p>
+        ]]>
+        </text>
+      </data-text>
+    </widget>
+    <attributes priority="10">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+
+  <widget-template name="recent-news">
+    <title>Recent News</title>
+    <description>Tells about the latest achievements and events</description>
+    <widget class="widget-tree" uuid="ureg6lMgphs">
+      <data-text uuid="ure1gvxedoo" priority="3"><text>Latest News</text></data-text>
+      <widget-tree uuid="">
+        <data-text uuid="ureXFBdcps1">
+          <text>
+        <![CDATA[
+          <span style="font-weight: bold">Opened a new office at {place}</span> - We recently opened up a new office at {place}. It is operational and working. 
+          Do give it a visit if you cross that area.]]>
+          </text>
+        </data-text>
+        <data-text uuid="ureXFBdcps2"><text>
+        <![CDATA[
+          <span style="font-weight: bold">We now also sell {new product}</span> - On heavy demand, we finally started working to provide {new product} along
+          with our other products.]]>
+          </text>
+        </data-text>
+        <data-text uuid="ureXFBdcps3"><text>
+        <![CDATA[
+          <span style="font-weight: bold">Started partnering with {partner name}</span> - We have partnered with {partner name} to work together and deliver
+          better services in {description}.]]>
+          </text>
+        </data-text>
+        <data-text uuid="ureXFBdcps4"><text>
+        <![CDATA[
+          <span style="font-weight: bold">We just hired {employee name}</span> - {employee name} just joined our team. This expands our team from earlier {x}
+          and expands our capacity for delivering {service name}.]]>
+          </text>
+        </data-text>
+      </widget-tree>
+    </widget>
+    <attributes priority="10">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="content-with-heading">
+    <title>Text &amp; Heading</title>
+    <description>Text and Heading</description>
+    <widget class="widget-tree" uuid="u81g6lMgphs">
+      <data-text uuid="uWc0gvxedoo" type="h3">
+        <text>Title Heading</text>
+      </data-text>
+      <data-text uuid="uvrXFBDcpsk" type="p">
+        <text>This is just sample text. Click to edit it and replace with
+          the some meaningful content about you, your profession, your
+          business or just about anything.</text>
+      </data-text>
+    </widget>
+    <attributes priority="10">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="resetpassword">
+    <widget class="widget-tree" uuid="uwhFYOM0rWG">
+      <data-form reference="resetpassword" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="section">
+    <title>Layout</title>
+    <description>3 Child Layout</description>
+    <widget class="widget-tree" uuid="ukjNtsMGCmc" mode="section">
+      <widget-tree uuid="ukTF5gluQq1" mode="column" />
+      <widget-tree uuid="uKIMBG1Gjoe" mode="column" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="content">
+    <title>Text</title>
+    <description>Text Content</description>
+    <widget class="widget-tree" uuid="uKb0q3iRZVA">
+      <data-text uuid="uLKLElCdM4p" type="p">
+        <text>This is just sample text. Click to edit it and replace with
+          the some meaningful content about you, your profession, your
+          business or just about anything.</text>
+      </data-text>
+    </widget>
+    <attributes priority="12">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="default">
+    <title>Box</title>
+    <description>An Empty Box</description>
+    <widget class="widget-tree" uuid="uK7LD4sa40N" />
+  </widget-template>
+
+  <widget-template name="sitemap">
+    <widget class="widget-tree" uuid="u3Dja9lptvf" />
+  </widget-template>
+
+  <widget-template name="contactus">
+    <title>Form</title>
+    <description>Form</description>
+    <widget class="widget-tree" uuid="uFLDpQoUH9O">
+      <data-form reference="contactus" />
+    </widget>
+    <attributes id="80">
+      <access>Public</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="column">
+    <title>Column</title>
+    <description>An Empty Column</description>
+    <widget class="widget-tree" uuid="us8HqG5Fyf3" mode="column" />
+  </widget-template>
+
+  <widget-template name="facebook-comments">
+    <title>Facebook Comments</title>
+    <description>Facebook Comments</description>
+    <widget class="data-ftl" uuid="uWvYLornfBP" templatePath="/elements/fbcomments.ftl" />
+    <attributes id="85">
+      <access>Admin</access>
+    </attributes>
+  </widget-template>
+
+  <widget-template name="signup">
+    <widget class="widget-tree" uuid="uMTCwuS8KTN">
+      <data-form reference="signup" />
+    </widget>
+  </widget-template>
+
+  <widget-template name="table">
+    <title>Table</title>
+    <description>Table of Data Items</description>
+    <attributes>
+      <access>Admin</access>
+    </attributes>
+    <widget class="widget-tree">
+      <data-table>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 2 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 2 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 2 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+        <row>
+          <data-text>
+            <text>Row 1 Col 1</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 2</text>
+          </data-text>
+          <data-text>
+            <text>Row 1 Col 3</text>
+          </data-text>
+        </row>
+      </data-table>
+    </widget>
+  </widget-template>
+
+  <widget-template name="inventory-widget">
+    <title>Inventory Widget</title>
+    <description>Inventory Widget</description>
+    <widget class="widget-tree" uuid="uMTCwu38KTN">
+      <data-json uuid="u7YkChAvV96" url="http://inventory.ford.versatalabs.com/?showDataModel=true" template="/elements/jsonRender.ftl" />
+    </widget>
+    <attributes>
+      <access>Admin</access>
+    </attributes>
+  </widget-template>
+
+  <!-- ************ ************ ************   -->
+  <!-- *********** Page Templates ***********   -->
+  <!-- ************ ************ ************   -->
+
+  <page-template name="default-page-template">
+    <title>Default</title>
+    <description>Default Page</description>
+    <attributes>
+      <access>Public</access>
+    </attributes>
+    <widget class="widget-tree" uuid="uGM78teRHX6" mode="content-area">
+      <widget-tree uuid="ugIDid1u35Y" mode="section">
+        <widget-tree uuid="uaO3GIGqAkf" mode="column" />
+        <widget-tree uuid="uLesaLX1CZ9" mode="column" />
+      </widget-tree>
+    </widget>
+  </page-template>
+
+  <page-template name="image-gallery-home">
+    <title>Image Gallery</title>
+    <description>Image Gallery Home</description>
+    <attributes>
+      <access>Public</access>
+    </attributes>
+    <widget class="widget-tree" uuid="pgtl1w1" mode="content-area">
+      <widget-tree uuid="pgtl1w2" mode="section">
+        <widget-tree uuid="pgtl1w3" mode="column" />
+        <widget-tree uuid="pgtmHIreKyx">
+          <widget-tree uuid="pgtgvCjCf6o" mode="slideshow-gallery">
+            <data-image uuid="pgtWlX3EY8J" path="http://content.designoncloud.com/static/img/temp1.jpg" />
+            <data-image uuid="pgtWlX3EY9J" path="http://content.designoncloud.com/static/img/temp2.jpg" />
+            <data-image uuid="pgtWlX3EYAJ" path="http://content.designoncloud.com/static/img/temp3.jpg" />
+            <data-image uuid="pgtWlX3EYBJ" path="http://content.designoncloud.com/static/img/temp4.jpg" />
+          </widget-tree>
+        </widget-tree>
+        <widget-tree uuid="pgtl1w4">
+            <data-text uuid="pgtl1w5" type="h3">
+            <text>Title Heading</text>
+            </data-text>
+            <data-text uuid="pgtl1w6" type="p">
+            <text>This is just sample text. Click to edit it and replace with
+              the some meaningful content about you, your profession, your
+              business or just about anything.</text>
+          </data-text>
+        </widget-tree>
+        <widget-tree uuid="pgtl1w7" mode="column">
+
+        </widget-tree>
+      </widget-tree>
+    </widget>
+  </page-template>
+
+
+</pages>

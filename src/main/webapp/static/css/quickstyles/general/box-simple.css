@@ -1,0 +1,7 @@
+.CLASS-NAME {
+  background-color: #E5E5E5;
+  border: 1px solid #B3B3B3;
+  -moz-box-shadow: 3px 3px 5px -3px #111111;
+  -webkit-box-shadow: 3px 3px 5px -3px #111111;
+  box-shadow: 3px 3px 5px -3px #111111;
+}

@@ -1,0 +1,37 @@
+.el-navigation-data-item {
+  border-bottom: 1px solid #CCCCCC;
+}
+.el-navigation-data-item > li {
+  margin-bottom: -1px;
+}
+.el-navigation-data-item > li > a {
+  border-bottom: 1px solid transparent;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: #0000ff;
+  display: block;
+  line-height: 2.5em;
+  margin-right: 2px;
+  padding: 0 1em;
+  text-decoration: none;
+}
+.el-navigation-data-item > li > a:visited {
+  color: #0000ff;
+}
+.el-navigation-data-item > li > a:hover {
+  background-color: #aaaaaa;
+  border-bottom: 1px solid #CCCCCC;
+  color: #808080;
+}
+.el-navigation-data-item > li.selected > a {
+  background-color: #ffffff;
+  border-color: #cccccc #cccccc #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  color: #808080;
+  padding: 0 1em;
+}
+.el-navigation-data-item > li.selected > a:visited {
+  color: #808080;
+}

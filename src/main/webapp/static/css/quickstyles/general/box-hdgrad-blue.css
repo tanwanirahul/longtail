@@ -1,0 +1,19 @@
+.CLASS-NAME {
+  border: 1px solid #466899;
+  color: #FFFFFF;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+  -moz-text-shadow: 1px 1px 0 #222;
+  -webkit-text-shadow: 1px 1px 0 #222;
+  text-shadow: 1px 1px 0 #222;
+  background: #6396D8;
+  background: -moz-linear-gradient(top, #6396D8 0, #5A83BC 12px, #547AB7 12px, #466899 25px, #6396D8 25px, #6396D8 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6396D8), color-stop(12px, #5A83BC), color-stop(12px, #547AB7), color-stop(25px, #466899), color-stop(25px, #6396D8), color-stop(100%, #6396D8));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F5F5F5), color-stop(12px, #EFEFEF), color-stop(12px, #E5E5E5), color-stop(25px, #DFDFDF), color-stop(25px, #F0F0F0), color-stop(100%, #F0F0F0));
+  background: -webkit-linear-gradient(top, #6396D8 0, #5A83BC 12px, #547AB7 12px, #466899 25px, #6396D8 25px, #6396D8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6396D8',endColorstr='#466899',GradientType=0);
+}

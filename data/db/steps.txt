@@ -1,0 +1,8 @@
+1) Change in pom.xml (use runtime for servlet-api under "org.apache.tomcat")
+2) mvn exec:java -Dexec.mainClass=in.hashed.longtail.data.DataPopulator -e
+3) mvn net.alchim31.maven:yuicompressor-maven-plugin:compress (for minifying the js / css files)
+4) For DB dump ->  mysqldump -u longtail -p longtail > longtail_28_07_11
+5) For uploading images to DB 
+-> mvn exec:java -Dexec.mainClass=in.hashed.longtail.data.UploadUpdateImages -Dexec.args="Background Image /home/hashedin/backup/img/bgImage"
+-> mvn exec:java -Dexec.mainClass=in.hashed.longtail.data.UploadUpdateImages -Dexec.args="Background Texture /home/hashedin/backup/img/textures"
+6) ALTER TABLE form_data_values CHANGE element element BLOB;

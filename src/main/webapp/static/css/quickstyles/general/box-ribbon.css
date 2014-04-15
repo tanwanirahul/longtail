@@ -1,0 +1,20 @@
+.CLASS-NAME {
+}
+
+.CLASS-NAME:AFTER {
+	content: URL('/static/img/new_icon.png');
+	display: block;
+	position: absolute;
+	right: -10px;
+	top: -10px;
+	width: 35px;
+	height: 15px;
+	background: #FFDC14;
+	border: 1px solid #9B8400;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  -moz-transform: rotate(13deg);
+  -webkit-transform: rotate(13deg);
+  transform: rotate(13deg);
+}

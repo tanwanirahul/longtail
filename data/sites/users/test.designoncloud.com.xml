@@ -1,0 +1,111 @@
+<in.hashed.longtail.model.Site id="1">
+  <domain>test.local.designoncloud.com</domain>
+  <theme id="2" name="theme_Light-Blue,theme_full-bar"/>
+  <active>true</active>
+  <claimed>true</claimed>
+  <cloneable>false</cloneable>
+  <creationDate class="sql-timestamp" id="3">2011-11-04 22:51:14.0</creationDate>
+  <lastModifiedDate class="sql-timestamp" id="4">2011-11-04 22:51:15.0</lastModifiedDate>
+  <published>true</published>
+  <industry>Others</industry>
+  <pages id="5">
+    <page id="6" showOnNav="true" path="/" name="Home" title="Homepage">
+      <widgetInstance id="7" uuid="Body" mode="content-area">
+        <widget-tree id="8" uuid="Row_1" mode="section">
+          <widget-tree id="9" uuid="Col_1_1" mode="column">
+            <widget-tree id="10" uuid="wqljgk">
+              <data-image id="11" uuid="IDrutD" path="/static/img/sites/hashedin/logo.png" width="0" height="0"/>
+            </widget-tree>
+            <widget-tree id="12" uuid="wVmpPs">
+              <data-text id="13" uuid="TBT1A3" priority="3">
+                <text>Title Heading</text>
+              </data-text>
+              <data-text id="14" uuid="TKP1od">
+                <text>This is just sample text. Click to edit it and replace with
+                        the some meaningful content about you, your profession, your
+                        business or just about anything.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+        <widget-tree id="15" uuid="Row_2" mode="section">
+          <widget-tree id="16" uuid="Col_2_1" mode="column">
+            <widget-tree id="17" uuid="wtSFbM">
+              <data-text id="18" uuid="Ta4Vor">
+                <text>This is just sample text. Click to edit it and replace with
+                        the some meaningful content about you, your profession, your
+                        business or just about anything.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="19" uuid="Col_2_2" mode="column">
+            <widget-tree id="20" uuid="wXIqnr">
+              <data-image id="21" uuid="I298nM" path="/static/img/no_img.jpg" width="0" height="0"/>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="22" uuid="Col_2_3" mode="column">
+            <widget-tree id="23" uuid="wreek9">
+              <data-image id="24" uuid="I03hcK" path="/static/img/no_img.jpg" width="0" height="0"/>
+              <data-text id="25" uuid="TVcNty">
+                <text>This is just sample text. Click to edit it and replace with
+                        the some meaningful content about you, your profession, your
+                        business or just about anything.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+    <page id="26" showOnNav="true" path="/about-us/" name="About Us" title="About Us">
+      <widgetInstance id="27" uuid="WlayoHF7Ti" mode="content-area">
+        <widget-tree id="28" uuid="WlayoQ613i" mode="section">
+          <widget-tree id="29" uuid="Wlayogk6b1" mode="column"/>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+    <page id="30" showOnNav="true" path="/contact-us/" name="Contact Us" title="Contact Us Page Title">
+      <widgetInstance id="31" uuid="WlayoGTtgE" mode="content-area">
+        <widget-tree id="32" uuid="Wlayo8ws06" mode="section">
+          <widget-tree id="33" uuid="WlayoRpOmu" mode="column"/>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+  </pages>
+  <data-image reference="21"/>
+  <data-image reference="24"/>
+  <widget-tree reference="9"/>
+  <data-text reference="18"/>
+  <data-text reference="25"/>
+  <widget-tree reference="10"/>
+  <widget-tree reference="12"/>
+  <widget-tree reference="27"/>
+  <widget-tree reference="20"/>
+  <widget-tree reference="15"/>
+  <widget-tree reference="8"/>
+  <widget-tree reference="33"/>
+  <widget-tree reference="23"/>
+  <widget-tree reference="7"/>
+  <data-text reference="13"/>
+  <widget-tree reference="32"/>
+  <widget-tree reference="28"/>
+  <widget-tree reference="17"/>
+  <widget-tree reference="31"/>
+  <widget-tree reference="16"/>
+  <widget-tree reference="22"/>
+  <widget-tree reference="19"/>
+  <data-text reference="14"/>
+  <data-image reference="11"/>
+  <widget-tree reference="29"/>
+  <siteStyles id="34">
+#primaryNav|{min-height:36px;margin-left:0px;margin-top:61px;width:958px;}
+#siteLogoImg|{margin-top:10px;margin-left:0px;}
+#c_Row_1|{margin-top:0px;}
+#wVmpPs|{min-height:47px;margin-left:0px;margin-top:6px;padding:10px;}
+#Content_Body|{margin-top:0px;}
+#TKP1od|{margin-top:5px;margin-left:0px;}
+#header|{min-height:127px;background-color:#DBF2FA;width:960px;}
+</siteStyles>
+</in.hashed.longtail.model.Site>

@@ -1,0 +1,56 @@
+@import "../../css/lib.less";
+
+/*****  T Y P O G R A P H Y  *****/
+
+@import "../../css/themes/new/typography/First.css";
+@import "../../css/themes/new/typography/Second.css";
+
+
+/**********  T A B L E  **********/
+
+@import "../../css/themes/new/table/default.css";
+@import "../../css/themes/new/table/default-zs.css";
+@import "../../css/themes/new/table/bordered.css";
+@import "../../css/themes/new/table/bordered-zs.css";
+
+
+/*********  W I D G E T  *********/
+
+.widget { margin: 1em; }
+
+@import "../../css/themes/new/widget/simple.css";
+@import "../../css/themes/new/widget/elegant.css";
+@import "../../css/themes/new/widget/inset.css";
+
+
+/*****  N A V I G A T I O N  *****/
+
+@import "../../css/themes/new/navigation/tabs.css";
+@import "../../css/themes/new/navigation/pills.css";
+@import "../../css/themes/new/navigation/bar.css";
+@import "../../css/themes/new/navigation/full-bar.css";
+
+
+/***********  F O R M  ***********/
+
+
+/**  L I N K   &   B U T T O N  **/
+
+@import "../../css/themes/new/button/candy.css";
+@import "../../css/themes/new/button/cupid-blue.css";
+@import "../../css/themes/new/button/cupid-green.css";
+@import "../../css/themes/new/button/default.css";
+@import "../../css/themes/new/button/dribble.css";
+@import "../../css/themes/new/button/elegant.css";
+@import "../../css/themes/new/button/indent.css";
+@import "../../css/themes/new/button/minimal.css";
+@import "../../css/themes/new/button/pill.css";
+@import "../../css/themes/new/button/punch.css";
+@import "../../css/themes/new/button/shiny.css";
+@import "../../css/themes/new/button/simple.css";
+@import "../../css/themes/new/button/slick.css";
+@import "../../css/themes/new/button/thoughtbot.css";
+
+
+/******  3 D   R I B B O N  ******/
+

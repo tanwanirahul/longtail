@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /lt_edit
+Disallow: /lt_admin
+Allow: /
+Crawl-delay: 10

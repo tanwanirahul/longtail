@@ -1,0 +1,230 @@
+@import "lib.less";
+
+
+.css-style-form { height: 76px; }
+.css-style-form .current-selector { background-color: #444444; height: 100%; width: 13%; }
+
+.css-style-form .css-styles { height: 100%; width: 87%; }
+.css-style-form .quick-styles, .css-style-form .background-styles, .css-style-form .border-styles,
+.css-style-form .advanced-effects, .css-style-form .text-styles {width: 11%; text-align: center; }
+.css-style-form .image-properties { width: 15%; text-align: center; }
+.css-style-form .size-spacing-styles { width: 27%; }
+
+.css-style-form .element-attributes { width: 87%; }
+
+.css-style-form .element-attributes, .css-style-form .css-styles { display: none; }
+.css-style-form.settings-mode .element-attributes { display: inline-block; }
+.css-style-form.design-mode .css-styles { display: inline-block; }
+
+.css-style-form .upload-image { margin-left: 5%; font-size: 14px; font-weight: bold; text-decoration: underline !important; text-shadow: 0 1px 0 #666; }
+
+.yui3-dropdown-panel .yui3-dropdown-item { margin: 5px; }
+.yui3-item-browse .close,.yui3-item-browse  .yui3-widget-hd, .yui3-overlay-css .yui3-widget-hd { display: none; }
+
+.css-style-form .field-extension {
+  top: 1px;
+  height: auto;
+}
+
+.css-style-form .legend {
+  color: #EFEFEF;
+  font: bold 1.15em "Times New Roman", Times, serif;
+  margin: 3px 0 6px;
+  text-align: left;
+  text-indent: 10px;
+  text-shadow: 0 1px 0 #000000;
+  width: 100%;
+}
+
+.css-style-form .styles-section {
+  position: relative;
+  height: 100%;
+  border-left: 1px solid #7C7C7C;
+  .box-shadow(-1px 0 0 #404040);
+}
+.css-style-form .styles-section.disabled .legend, .css-style-form .styles-section.disabled .upload-image {
+  color: #bbb !important;
+}
+.css-style-form .styles-section.disabled .yui3-dropdown {
+  background: #909090;
+  border: 1px solid #777;
+}
+.css-style-form .styles-section.disabled .yui3-dropdown:after {
+  border-color: #ccc transparent transparent;
+}
+
+.css-style-form-label {
+  color: #E4E4E4;
+  margin-right: 3px;
+  text-align: right;
+  text-shadow: 0 1px 0 #333333;
+  vertical-align: text-top;
+}
+
+.css-style-form input[type=checkbox] { vertical-align: text-top; }
+
+.css-style-form .yui3-spinner {
+  text-align: right;
+  vertical-align: middle;
+}
+
+.yui3-dropdown .yui3-spinner {
+  margin: 0;
+}
+
+.css-style-form .yui3-spinner-value {
+  border: none;
+  height: 16px;
+  width: 25px;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.css-style-form .selected-widget {
+  background: #333;
+  border: 1px solid #222;
+  .box-shadow(0 1px 1px #FFFFFF inset);
+  color: #CDCDCD;
+  padding: 8px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  margin-left: 36px;
+  margin-right: 6px;
+}
+
+.css-style-form .selected-widget:HOVER {
+  background-color: #999;
+  color: #000000;
+  .box-shadow(0 1px 1px #CCCCCC inset);
+}
+
+.css-style-form .selected-widget-active {
+  background: #aaa;
+}
+
+.css-style-form .browse-layout {
+  width: 30px;
+  height: 30px;
+  left: 6px;
+  background: #aaa url("../img/icons-edit.png") center -1156px;
+  border: 1px solid #222;
+  position: absolute;
+}
+
+.css-style-form .browse-layout:HOVER {
+  background-color: #999;
+  .box-shadow(0 1px 1px #CCCCCC inset);
+}
+
+#selectionOverlayContainer {
+    background: #000000;
+    border: 2px solid #888888;
+    .box-shadow(2px 2px 4px #111111);
+    display: none;
+    left: 5px;
+    position: absolute;
+    text-align: left;
+    top: 85px;
+    width: 250px;
+    z-index: 111;
+}
+
+/** Selection Tree styles - start **/
+#selectionTree {
+  color: #E0E0E0;
+  font-size: 9px;
+  .linear-gradient-3color-vertical(rgba(255,255,255,0.4), rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  background: #000000;
+  margin: 0;
+  text-shadow: 1px 1px 2px #111111;
+}
+#selectionTree ul { padding: 0px 0px 0px 0px; border-left: 1px solid #555;}
+#selectionTree li { background: rgba(155, 155, 155, 0.07); margin: 2px 0; }
+#selectionTree li a { padding: 2px 0 2px 3px; display: block; cursor: pointer; border-top: 1px solid #555;border-left: 1px solid #555;}
+#selectionTree li.selected { background: rgba(255, 255, 255, 0.2); border: 1px solid rgba(255, 255, 255, 0.3); margin: 1px -1px; }
+#selectionTree li.selected > a { color: #F99220; }
+#selectionTree li a:HOVER {
+  background: #333;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 1px 1px 0;
+}
+#selectionTree li a:HOVER + ul {
+  background: #333;
+  border-color: #999999;
+  border-style: solid;
+  border-width: 0 1px 1px;
+}
+/** Selection Tree styles - end **/
+
+/** Text Properties styles - start **/
+.text-align input {
+  background-image: url("http://content.designoncloud.com/static/img/icons.gif");
+  background-repeat: no-repeat;
+  height: 18px;
+  width: 21px;
+}
+
+.text-align input:HOVER {
+  outline: 1px inset #000;
+}
+
+.align-center {
+  background-position: -422px -4px;
+}
+
+.align-justify {
+  background-position: -442px -4px;
+}
+
+.align-left {
+  background-position: -462px -4px;
+}
+
+.align-right {
+  background-position: -482px -4px;
+}
+
+.style-tree-section {
+  .linear-gradient-3color-vertical(rgba(255,255,255,0.4), rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  padding: 5px;
+  cursor: pointer;
+  display: block;
+}
+
+.font-set-style {
+  margin-left: 10%;
+  text-align: left;
+}
+
+.font-set-style > * {
+  .inline-block();
+  vertical-align: top;
+}
+
+.font-selector {
+  color: white;
+  font-size: 10px;
+  line-height: 16px;
+  overflow: hidden;
+  text-align: center;
+  width: 80px;
+}
+/** Text Properties styles - end **/
+
+/** Image Properties styles - start **/
+.image-properties .change-image {
+  height: 35px;
+  width: 60px;
+  white-space: normal;
+}
+
+.reset-size {
+  height: 21px;
+  padding: 0 0.3em;
+}
+/** Image Properties styles - end **/
+
+@import "preset-swatches.css";

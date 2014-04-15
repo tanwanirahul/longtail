@@ -1,0 +1,16 @@
+#publishForm {
+  margin: 35px 0 70px;
+}
+#publishForm h3 {
+  font-size: 1.4em;
+  margin-top: 20px;
+}
+#publishForm .admin-page-form {
+  margin: 10px auto;
+  width: 75%;
+}
+#totalBill {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-left: 10px;
+}

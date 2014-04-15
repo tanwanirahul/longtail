@@ -1,0 +1,64 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<display-name>Archetype Created Web Application</display-name>
+
+	<bean class="in.hashed.longtail.util.SystemEnvPropertyConfigurer">
+		<property name="propertyName" value="project" />
+  	</bean>
+
+	<context-param>
+	    <param-name>contextConfigLocation</param-name>
+	    <param-value>
+	      /WEB-INF/applicationContext-security.xml,
+	      /WEB-INF/applicationContext.xml
+	    </param-value>
+	</context-param>
+  
+  <context-param>
+    <param-name>org.mortbay.jetty.servlet.SessionDomain</param-name>
+    <param-value>.local.designoncloud.com</param-value>
+  </context-param>
+    
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+	<servlet>
+		<servlet-name>debug</servlet-name>
+		<jsp-file>/debug/debug.jsp</jsp-file>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>debug</servlet-name>
+		<url-pattern>/debug/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>dispatch</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>dispatch</servlet-name>
+		<url-pattern>/*</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+	    <filter-name>springSecurityFilterChain</filter-name>
+	    <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+	</filter>
+	<filter-mapping>
+	    <filter-name>springSecurityFilterChain</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+	<session-config>
+		<!--  Specify in minutes.  -->
+		<session-timeout>180</session-timeout>  
+	</session-config>  		
+</web-app>

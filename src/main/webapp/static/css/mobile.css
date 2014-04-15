@@ -1,0 +1,251 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+    {
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,img {
+    border: 0;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+caption,th {
+    text-align: left;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+q:before,q:after {
+    content: '';
+}
+
+abbr,acronym {
+    border: 0;
+    font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+input,textarea,select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+input,textarea,select { *
+    font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+legend {
+    color: #000;
+}
+/** RESET END **/
+
+/** Tag Selectors - Begin **/
+body {
+    --background-color: #E3E9FF;	
+}
+
+h1 {
+    font-size: 175%; /*18px*/
+}
+
+h2 {
+    font-size: 140%; /*16px*/
+}
+
+h3 {
+    font-size: 108%; /*14px*/
+}
+
+h1,h2,h3 {
+    margin: 0.6em 0;
+}
+
+.header-text h1,h2,h3,p {
+    margin: 0;
+}
+
+.header-text h1 p {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+    font-weight: bold;
+}
+
+abbr,acronym {
+    border-bottom: 1px dotted #000;
+    cursor: help;
+}
+
+em {
+    font-style: italic;
+}
+
+/**
+blockquote,ul,ol,dl {
+    margin: 1em;
+}
+
+ol,ul,dl {
+    margin-left: 2em;
+}
+*/
+
+ol li {
+    list-style: decimal outside;
+}
+
+ul li {
+    list-style: disc outside;
+}
+
+dl dd {
+    margin-left: 1em;
+}
+
+/* This styling should only be in rich-text content */
+.rich-text th, .rich-text td {
+    border: 1px solid #000;
+    padding: 0.5em;
+}
+
+/* This styling should only be in rich-text content */
+.rich-text th {
+    font-weight: bold;
+    text-align: center;
+}
+
+/**
+caption {
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+p,fieldset,table,pre {
+    margin-bottom: 1em;
+}
+
+input[type=text],input[type=password],textarea {
+    width: 12.25em;
+    *width: 11.9em;
+}
+*/
+/** Tag selectors - End **/
+
+.widget {
+    overflow: hidde    
+}
+
+.widget-container.layout-container {
+    width:100% !important;
+}
+
+.nav-widget UL {
+    padding-left: 0;
+}
+
+.nav-widget li {
+    border: 0 none;
+    float: left;
+    list-style-type: none;
+    margin-right: 5px;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.nav-widget li.selected {
+    font-weight: bolder;
+}
+
+.nav-widget li a, .nav-widget li a:active, .nav-widget li a:visited {
+    color: #000000;
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.nav-widget li a:hover, .nav-widget li a:focus {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.header-widget .logo {
+    float: left;
+}
+
+.header-widget .logo img{
+    height: 40px;
+}
+
+.header-widget .header-text {
+    float: left;
+    padding-left: 3px;
+}
+      
+.header-widget {
+    margin-bottom: 5px;
+    border-bottom: 3px groove black;
+    background-color: #013155;
+    color: #BDC1C6;  
+}
+
+.content-area .widget > h1 {
+    display: block;
+    font-size: 1em;
+    background: #BBCCFF url("../img/glossy-menu.png") repeat-x scroll 0 0;
+    border: 1px solid black;
+    text-shadow: gray 5px buttontext;
+    cursor: pointer;
+    margin: 0;
+}
+
+.content-area .widget > h1 div {
+    margin: 0 0.5em;	
+}
+
+.content-area .focussed.widget > *{
+    display: block;
+}
+
+.widget-settings {
+    display: none;  
+}
+
+.widget.no-title .title {
+    display: none;  
+}
+
+script {
+    display: none !important;
+}
+
+.site-footer {
+    font-size: 0.75em;
+    margin-top: 1em;
+}

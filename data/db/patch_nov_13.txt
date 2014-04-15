@@ -1,0 +1,3 @@
+UPDATE widgets
+SET mode = CONCAT('mode-',mode)
+where mode IN ('title','no-title');

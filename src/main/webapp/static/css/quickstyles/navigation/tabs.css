@@ -1,0 +1,37 @@
+.CLASS-NAME {
+  border-bottom: 1px solid #CCCCCC;
+}
+.CLASS-NAME > li {
+  margin-bottom: -1px;
+}
+.CLASS-NAME > li > a {
+  border-bottom: 1px solid transparent;
+  -moz-border-radius: 5px 5px 0 0;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  color: #0000ff;
+  display: block;
+  line-height: 2.5em;
+  margin-right: 2px;
+  padding: 0 1em;
+  text-decoration: none;
+}
+.CLASS-NAME > li > a:visited {
+  color: #0000ff;
+}
+.CLASS-NAME > li > a:hover {
+  background-color: #aaaaaa;
+  border-bottom: 1px solid #CCCCCC;
+  color: #808080;
+}
+.CLASS-NAME > li.selected > a {
+  background-color: #ffffff;
+  border-color: #cccccc #cccccc #ffffff;
+  border-style: solid;
+  border-width: 1px;
+  color: #808080;
+  padding: 0 1em;
+}
+.CLASS-NAME > li.selected > a:visited {
+  color: #808080;
+}

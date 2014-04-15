@@ -1,0 +1,25 @@
+.CLASS-NAME > li > a {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  color: #0000ff;
+  display: block;
+  line-height: 2em;
+  margin: 0.3px 0.2px 0.3px 0;
+  padding: 0 1em 0.1em;
+  text-decoration: none;
+}
+.CLASS-NAME > li > a:visited {
+  color: #0000ff;
+}
+.CLASS-NAME > li > a:hover {
+  background-color: #0050A3;
+  color: #ffffff;
+}
+.CLASS-NAME > li.selected > a {
+  background-color: #0069D6;
+  color: #ffffff;
+}
+.CLASS-NAME > li.selected > a:visited {
+  color: #ffffff;
+}

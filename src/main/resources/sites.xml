@@ -1,0 +1,67 @@
+<list>
+	<site layout="basic-layout-0" subdomain="consumer.hashed.in">
+		<attributes>
+		  	<![CDATA[
+				userName=Test User
+				userAddress=123 Main Street, City, Country - 5712211
+				contactNumber=080-101-1010
+				siteNav["2"]=/property
+				siteNav["1"]=/about
+				siteNav["0"]=/home
+				siteLogo=/static/css/theme1/logo.jpg
+				siteName=RealProperties.com
+				siteMotto=The best in Real Estate
+			 ]]>
+		</attributes>
+		<forms>contactus,property</forms>
+		<pages>
+			<page name="/home" content="contactus" secondaryContent="content" />
+			<page name="/about" content="aboutus" secondaryContent="content" />
+			<page name="/property" content="property-list" secondaryContent="property-add" />
+		</pages>
+	</site>
+
+	<site layout="admin-layout-0" subdomain="admin.hashed.in">
+		<attributes>
+		  	<![CDATA[
+				userName=Test User
+				userAddress=123 Main Street, City, Country - 5712211
+				contactNumber=080-101-1010
+				siteNav["2"]=/property
+				siteNav["1"]=/leads
+				siteNav["0"]=/home
+			 ]]>
+		</attributes>
+		<forms>contactus,property</forms>
+		<pages>
+			<page name="/home" content="content, content"/>
+			<page name="/leads" content="leadreport" />
+			<page name="/property" content="property-list, property-add"/>
+		</pages>
+	</site>
+
+	<site layout="basic-layout-0" subdomain="hashed.in">
+		<attributes>
+		  	<![CDATA[
+				userName=Test User
+				userAddress=123 Main Street, City, Country - 5712211
+				contactNumber=080-101-1010
+				siteNav["2"]=/aboutus
+				siteNav["1"]=/contactus
+				siteNav["0"]=/home
+				siteName=Hashed
+				siteMotto="Web presence for every business"
+			 ]]>
+		</attributes>
+		<forms>contactus</forms>
+		<pages>
+			<page name="/home" content="content" secondaryContent="content"/>
+			<page name="/aboutus" content="content" secondaryContent="content"/>
+			<page name="/contactus" content="content" secondaryContent="content"/>
+		</pages>
+	</site>
+
+
+
+
+</list>

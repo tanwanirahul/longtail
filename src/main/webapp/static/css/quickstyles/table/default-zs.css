@@ -1,0 +1,27 @@
+.CLASS-NAME {
+  font-size: 1em;
+  width: 100%;
+}
+.CLASS-NAME thead th {
+  border-bottom: 2px solid #DDDDDD;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.5em 1em;
+}
+.CLASS-NAME tfoot td {
+  border-bottom: 1px solid #DDDDDD;
+  font-size: 0.9em;
+  font-style: italic;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+.CLASS-NAME tbody tr:nth-child(2n+1) {
+  background: #F9F9F9;
+}
+.CLASS-NAME tbody tr:hover {
+  background: #F0F0F0 !important;
+}
+.CLASS-NAME tbody td {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 0.5em 1em;
+}

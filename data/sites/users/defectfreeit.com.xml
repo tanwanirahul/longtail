@@ -1,0 +1,381 @@
+<in.hashed.longtail.model.Site id="1">
+  <domain>defectfreeit.local.designoncloud.com</domain>
+  <theme id="2" name="theme_Light-Blue,theme_candy,theme_full-bar"/>
+  <active>true</active>
+  <claimed>true</claimed>
+  <cloneable>false</cloneable>
+  <creationDate class="sql-timestamp" id="3">2011-11-04 22:51:14.0</creationDate>
+  <lastModifiedDate class="sql-timestamp" id="4">2011-11-05 12:57:56.0</lastModifiedDate>
+  <published>true</published>
+  <industry>Others</industry>
+  <pages id="5">
+    <page id="6" showOnNav="true" path="/" name="Home" title="Homepage">
+      <widgetInstance id="7" uuid="Body" mode="content-area">
+        <widget-tree id="8" uuid="Row_1" mode="section">
+          <widget-tree id="9" uuid="Col_1_1" mode="column">
+            <widget-tree id="10" uuid="wd8o5t" mode="slideshow-gallery">
+              <widget-tree id="11" uuid="lDxEx4">
+                <data-image id="12" uuid="I2u1rr" path="http://www.defectfreeit.com/images/slide.jpg" width="0" height="0"/>
+                <data-image id="13" uuid="IBKMZg" path="http://www.defectfreeit.com/images/slide2.jpg" width="0" height="0"/>
+                <data-image id="14" uuid="INyC4W" path="http://www.defectfreeit.com/images/slide3.jpg" width="0" height="0"/>
+                <data-image id="15" uuid="IhCycE" path="http://www.defectfreeit.com/images/slide4.jpg" width="0" height="0"/>
+              </widget-tree>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+        <widget-tree id="16" uuid="Row_2" mode="section">
+          <widget-tree id="17" uuid="Col_2_1" mode="column">
+            <widget-tree id="18" uuid="wtjiSe">
+              <data-text id="19" uuid="T9fPyu" priority="3">
+                <text>QA &amp;amp; Testing&lt;br&gt;</text>
+              </data-text>
+              <data-text id="20" uuid="TW9W54">
+                <text>Quality Assurance is a critical part of the product development life cycle. Managing this well not only cuts down cost but also brings the product to the market on time.&lt;br&gt;&lt;br&gt;A highly capable team is needed to handle the complexities of numerous platforms, domain technologies and release cycles.&amp;nbsp; we take this responsibility seriously. We have a strong team with many years of experience in qualifying products for customers. &lt;br&gt;&lt;span id=&quot;yui_3_3_0_1_13159346323149448&quot; class=&quot;Apple-style-span yui_3_3_0_1_13159352288952334&quot; style=&quot;color: rgb(95, 92, 78); font-family: inherit; font-size: 11px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: 15px; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;/span&gt;</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="21" uuid="Col_2_2" mode="column">
+            <widget-tree id="22" uuid="w1HeH8">
+              <data-text id="23" uuid="TemXYC" priority="3">
+                <text>Manual Testing&lt;br&gt;</text>
+              </data-text>
+              <data-text id="24" uuid="TeN9Tl">
+                <text>We have a very capable manual testing team that specializes in the following services.&lt;br&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="25" uuid="wKi8ZB">
+              <data-text id="26" uuid="Tro5CS">
+                <text>&amp;nbsp; Manual software testing&amp;nbsp;&amp;nbsp;&amp;nbsp; &lt;br&gt;
+&amp;nbsp; Unit/Integration testing&lt;br&gt;
+&amp;nbsp; System/Functional test&lt;br&gt;
+&amp;nbsp; Security testing&lt;br&gt;
+&amp;nbsp; Performance and load testing&lt;br&gt;
+&amp;nbsp; Compatibility testing&lt;br&gt;
+&amp;nbsp; GUI/Usability testing&lt;br&gt;
+&amp;nbsp; Scalability testing&lt;br&gt;
+&amp;nbsp; Concurrency testing</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="27" uuid="Col_2_3" mode="column">
+            <widget-tree id="28" uuid="wnXZty">
+              <data-text id="29" uuid="TmPnYU">
+                <text>&lt;a style=&quot;color: rgb(255, 255, 255); text-decoration: none;&quot; class=&quot;button&quot; id=&quot;yui_3_3_0_1_131593522889510130&quot; href=&quot;/contact-us&quot;&gt;Request a Quote&lt;/a&gt;&lt;br&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="30" uuid="wj3XbB">
+              <data-text id="31" uuid="TA4cI1">
+                <text>Our Customers Say&lt;br&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="32" uuid="wIKt4x">
+              <data-image id="33" uuid="IaZrl5" path="http://versata.com/templates/versata/images/menu_home.gif" width="0" height="0"/>
+              <data-text id="34" uuid="Tje5JR">
+                <text>&lt;span style=&quot;font-size: 11px; font-style: italic;&quot; id=&quot;yui_3_3_0_1_131593972982938625&quot;&gt;Defect FreeIT has helped us make multiple releases on time and with ZERO defects and realize multimillion dollar projects.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;yui_3_3_0_1_131593707758013480&quot; style=&quot;font-weight: bold;&quot;&gt;Program Director, Versata&lt;/span&gt;&lt;br&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="35" uuid="wFZvjS">
+              <data-image id="36" uuid="IRDLdO" path="http://www.devfactory.com/sites/devfactory.com/themes/energetic/logo.png" width="0" height="0"/>
+              <data-text id="37" uuid="TP2Zxo">
+                <text>&lt;span id=&quot;yui_3_3_0_1_131593972982938939&quot; style=&quot;font-style: italic; font-size: 11px;&quot;&gt;When it comes to manual testing, Defect FreeIT is our most trusted partner continuing to deliver value to our projects.&lt;/span&gt;&lt;br&gt;&lt;span id=&quot;yui_3_3_0_1_13159364025539836&quot; style=&quot;font-weight: bold;&quot;&gt;CEO, Devfactory&lt;/span&gt;.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+        <widget-tree id="38" uuid="wgye74" mode="section">
+          <widget-tree id="39" uuid="wEIpNI" mode="column">
+            <widget-tree id="40" uuid="wOCL9E">
+              <data-text id="41" uuid="TFlg8l">
+                <text>&lt;span id=&quot;yui_3_3_0_1_1315907118481105138&quot; style=&quot;font-weight: bold; font-size: 16px;&quot;&gt;Lorem ipsum&lt;br&gt;&lt;/span&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="42" uuid="wKbMr3">
+              <data-text id="43" uuid="TbB1uT">
+                <text>This is just sample text. Click to edit it and replace with
+                        the some meaningful content about you, your profession, your
+                        business or just about anything.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="44" uuid="wkkfNy" mode="column">
+            <widget-tree id="45" uuid="w5vIOW">
+              <data-text id="46" uuid="TADLVq">
+                <text>&lt;span id=&quot;yui_3_3_0_1_1315907118481105138&quot; style=&quot;font-weight: bold; font-size: 16px;&quot;&gt;Overview&lt;/span&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="47" uuid="wkBN0h">
+              <widget-tree id="48" uuid="lrX0I2">
+                <data-text id="49" uuid="TeiYHZ">
+                  <text>&amp;nbsp;&amp;nbsp; About us&lt;br&gt;</text>
+                </data-text>
+                <data-text id="50" uuid="T25eIl">
+                  <text>&amp;nbsp;&amp;nbsp; Read our blog&lt;br&gt;</text>
+                </data-text>
+                <data-text id="51" uuid="T5nN8D">
+                  <text>&amp;nbsp;&amp;nbsp; Get in touch&lt;br&gt;</text>
+                </data-text>
+                <data-text id="52" uuid="TySc72">
+                  <text>&amp;nbsp;&amp;nbsp; Become an affiliate&lt;br&gt;</text>
+                </data-text>
+              </widget-tree>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="53" uuid="wvWH3O" mode="column">
+            <widget-tree id="54" uuid="wgQCMW">
+              <data-text id="55" uuid="TCYcIF">
+                <text>&lt;span id=&quot;yui_3_3_0_1_1315907118481105138&quot; style=&quot;font-weight: bold; font-size: 16px;&quot;&gt;Recent Blog Post&lt;/span&gt;&lt;br&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="56" uuid="wbXciS">
+              <widget-tree id="57" uuid="lkP0yI">
+                <data-text id="58" uuid="TUCwiJ">
+                  <text>&amp;nbsp;&amp;nbsp; My first blog&lt;br&gt;</text>
+                </data-text>
+                <data-text id="59" uuid="Tmid7U">
+                  <text>&amp;nbsp;&amp;nbsp; This is second blog title&lt;br&gt;</text>
+                </data-text>
+                <data-text id="60" uuid="T1XBAg">
+                  <text>&amp;nbsp;&amp;nbsp; Another of our blog&lt;br&gt;</text>
+                </data-text>
+                <data-text id="61" uuid="TwyqYT">
+                  <text>&amp;nbsp;&amp;nbsp; Our last blog&lt;br&gt;</text>
+                </data-text>
+              </widget-tree>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="62" uuid="wThZj9" mode="column">
+            <widget-tree id="63" uuid="wWkiJw">
+              <data-text id="64" uuid="TmXAtQ">
+                <text>&lt;span id=&quot;yui_3_3_0_1_1315907118481105138&quot; style=&quot;font-weight: bold; font-size: 16px;&quot;&gt;Connect with us&lt;br&gt;&lt;/span&gt;</text>
+              </data-text>
+            </widget-tree>
+            <widget-tree id="65" uuid="whSnMJ">
+              <data-text id="66" uuid="TycGeG">
+                <text>This text can be changed inside the
+options panel by the user. The icons
+can be enabled, disabled or changed</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+    <page id="67" showOnNav="true" path="/about-us/" name="About Us" title="About Us">
+      <widgetInstance id="68" uuid="WlayoHF7Ti" mode="content-area">
+        <widget-tree id="69" uuid="WlayoQ613i" mode="section">
+          <widget-tree id="70" uuid="Wlayogk6b1" mode="column"/>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+    <page id="71" showOnNav="true" path="/contact-us/" name="Contact Us" title="Contact Us Page Title">
+      <widgetInstance id="72" uuid="WlayoGTtgE" mode="content-area">
+        <widget-tree id="73" uuid="Wlayo8ws06" mode="section">
+          <widget-tree id="74" uuid="WlayoRpOmu" mode="column">
+            <widget-tree id="75" uuid="wi24wh">
+              <data-form id="76" uuid="FX45Js" formName="contactus"/>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="77" uuid="wbxx9a" mode="column">
+            <widget-tree id="78" uuid="wDYLxj">
+              <data-form id="79" uuid="FF1hPw" formName="contactus" action="/action_url">
+                <field id="80" uuid="fJjUeO" label="Name is Good" fieldName="Name" required="true" helpText="Enter your full name" fieldType="name"/>
+                <field id="81" uuid="f7Ykms" label="Email is better" fieldName="Email" required="true" helpText="Enter your email id" fieldType="email"/>
+                <field id="82" uuid="fgvoBF" label="Phone_No" fieldName="Phone_No" required="false" helpText="Enter your phone (Optional)" fieldType="phone"/>
+                <field id="83" uuid="fDNo7w" label="Comments" fieldName="Comments" required="true" helpText="Enter your comments/feeback" fieldType="comments"/>
+                <field id="84" uuid="fl5Nrt" label="Submit Your Request" fieldName="Submit Your Request" required="false" fieldType="submit"/>
+                <thankYou>Thank You Dude !</thankYou>
+                <emailTemplate></emailTemplate>
+                <emailSubject></emailSubject>
+              </data-form>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+  </pages>
+  <widget-tree reference="22"/>
+  <widget-tree reference="9"/>
+  <data-text reference="29"/>
+  <widget-tree reference="25"/>
+  <widget-tree reference="39"/>
+  <widget-tree reference="11"/>
+  <widget-tree reference="68"/>
+  <data-text reference="60"/>
+  <widget-tree reference="35"/>
+  <widget-tree reference="38"/>
+  <data-text reference="51"/>
+  <data-text reference="61"/>
+  <widget-tree reference="57"/>
+  <data-text reference="31"/>
+  <widget-tree reference="40"/>
+  <widget-tree reference="16"/>
+  <widget-tree reference="44"/>
+  <widget-tree reference="8"/>
+  <data-image reference="36"/>
+  <data-text reference="52"/>
+  <data-image reference="15"/>
+  <field reference="84"/>
+  <widget-tree reference="7"/>
+  <data-text reference="20"/>
+  <widget-tree reference="18"/>
+  <data-text reference="19"/>
+  <widget-tree reference="10"/>
+  <data-text reference="26"/>
+  <data-form reference="76"/>
+  <widget-tree reference="63"/>
+  <data-image reference="14"/>
+  <widget-tree reference="17"/>
+  <widget-tree reference="54"/>
+  <widget-tree reference="27"/>
+  <widget-tree reference="21"/>
+  <widget-tree reference="30"/>
+  <data-text reference="49"/>
+  <data-image id="85" uuid="siteLogoImg"/>
+  <widget-tree reference="32"/>
+  <field reference="83"/>
+  <data-text reference="50"/>
+  <data-text reference="43"/>
+  <data-image reference="13"/>
+  <data-text reference="58"/>
+  <widget-tree reference="75"/>
+  <data-text reference="23"/>
+  <widget-tree reference="78"/>
+  <data-text reference="37"/>
+  <data-text reference="34"/>
+  <data-text reference="64"/>
+  <widget-tree reference="56"/>
+  <data-text reference="55"/>
+  <data-text id="86" uuid="siteNameText">
+    <text>Defect Free IT &lt;br&gt;</text>
+  </data-text>
+  <field reference="81"/>
+  <field reference="82"/>
+  <data-text reference="46"/>
+  <widget-tree reference="45"/>
+  <widget-tree reference="48"/>
+  <data-image reference="12"/>
+  <widget-tree reference="62"/>
+  <field reference="80"/>
+  <widget-tree reference="74"/>
+  <widget-tree reference="65"/>
+  <widget-tree reference="42"/>
+  <data-text reference="24"/>
+  <widget-tree reference="53"/>
+  <data-form reference="79"/>
+  <data-text reference="41"/>
+  <widget-tree reference="73"/>
+  <widget-tree reference="47"/>
+  <data-image reference="33"/>
+  <widget-tree reference="69"/>
+  <widget-tree reference="72"/>
+  <data-text reference="66"/>
+  <data-text reference="59"/>
+  <widget-tree reference="70"/>
+  <widget-tree reference="77"/>
+  <widget-tree reference="28"/>
+  <siteStyles id="87">
+#c_Row_1|{margin-top:0px;}
+#c_Row_2|{margin-top:0px;}
+#wOCL9E|VlCkb0mF|{margin-top:14px;margin-left:0px;margin-right:10px;padding:5px;}
+#wkBN0h|VlCkb0mF|{margin-left:10px;margin-right:10px;}
+#TySc72|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+.childs-3#Wlayo8ws06&gt;DIV:nth-child(3)|{width:33.333333333333336%;}
+#Row_2|zzzzbg|
+#wbXciS|VlCkb0mF|{margin-left:10px;margin-right:10px;}
+#wlVa5t|{margin-top:19px;margin-left:0px;}
+#siteLogoImg|{height:44px;margin-top:24px;margin-left:609px;width:259px;}
+#wj1i1N|{margin-top:30px;margin-left:10px;margin-right:10px;}
+#Tje5JR|{min-height:98px;margin-top:6px;margin-left:22px;width:215px;}
+#T1XBAg|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:2px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#FX45Js|{min-height:335px;margin-top:11px;margin-left:32px;width:274px;}
+#wIcLW6|{margin-top:0;margin-left:0;}
+#wGHKEw|{margin-right:20px;}
+#Col_2_3|grad0006|zzzzbgcol|
+#TeiYHZ|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:2px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#T25eIl|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:2px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#Col_2_2|zzzzbg|zzzzbgcol|{min-height:237px;}
+#Col_2_1|zzzzbg|bgcol006|{min-height:240px;padding-right:0px;}
+#woMuPb|{margin-left:20px;}
+#TbB1uT|{width:auto;padding-left:10px;}
+#T5nN8D|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:2px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#siteNameText|fgcol002|{min-height:55px;margin-top:25px;margin-left:19px;width:241px;font-family:Bevan;font-size:31px;}
+#TRAxhV|fgcol002|9CunjYaV|{min-height: ;margin-top:6px;margin-left:0px;background-position:left top;width:auto;text-align:center;padding:16px;padding-right:60px;}
+#TFlg8l|{min-height:22px;width:auto;padding-left:10px;}
+#TYe9F9|{padding-right:0px;}
+#ID9qlf|brsty008|{border-radius:5px;height:106px;border-color:#D8D8D8;margin-top:0px;margin-left:0px;border-width:1px;width:283px;padding:5px;}
+#canvas|zzzzbg|c5tSgXFF|{background-position:center top;background-repeat:repeat-x;}
+#wqljgk|{margin-top:25px;margin-left:0px;}
+#w0VGUM|{margin-top:5px;margin-left:6px;margin-right:20px;}
+#T2M2cT|{min-height: ;width:368px;font-size:20px;}
+#wvnVQF|{margin-right:20px;padding-right:0px;}
+#I2u1rr|{min-height: ;height:340px;width:auto;}
+#TemXYC|QFbLfjtS|{min-height:44px;margin-top:20px;margin-left:18px;width:308px;font-size:20px;}
+#wbWM7o|{margin-left:10px;margin-right:10px;}
+.childs-3#Wlayo8ws06&gt;DIV:nth-child(1)|{width:35.893416927899686%;}
+#TwyqYT|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:0px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#I3MZoX|brsty008|{border-radius:5px;height:106px;border-color:#D8D8D8;border-width:1px;width:285px;padding:5px;}
+#wPxs9w|{margin-top:-5px;}
+#TDPSWi|{margin-top:0px;margin-left:1px;padding-right:0px;}
+#waM6P5|{margin-left:20px;}
+#wgQCMW|VlCkb0mF|{margin-top:15px;margin-left:10px;margin-right:10px;}
+#c_Wlayo8ws06|{margin-top:0px;}
+#TeN9Tl|{min-height:52px;margin-top:0px;margin-left:17px;width:302px;}
+#IEWPbk|brsty008|{border-radius:5px;height:106px;border-color:#D8D8D8;border-width:1px;width:285px;padding:5px;}
+#wFZvjS|{min-height:155px;margin-top:0px;margin-left:0px;}
+.childs-3#Wlayo8ws06&gt;DIV:nth-child(2)|{width:30.77324973876698%;}
+#wIKt4x|{margin-top:0px;margin-left:0px;}
+.childs-2#wysjG2&gt;DIV:nth-child(1)|{width:38.385416666666664%;}
+#IaZrl5|{height:80px;margin-top:0px;margin-left:21px;width:169px;}
+#Tro5CS|{min-height:199px;margin-top:0px;margin-left:20px;width:289px;}
+#c_wysjG2|{margin-top:56px;}
+#TP2Zxo|{min-height:98px;margin-top:4px;margin-left:27px;width:212px;}
+#TA4cI1|{min-height:36px;margin-top:0px;margin-left:19px;width:223px;font-size:20px;}
+#TUCwiJ|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:2px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#wD8xfN|{margin-left:20px;}
+#wLrJlp|{min-height: ;margin-top:30px;width:auto;}
+.childs-2#wysjG2&gt;DIV:nth-child(2)|{width:61.614583333333336%;}
+#Col_1_1|{min-height:148px;}
+#w09FCU|{margin-top:30px;margin-left:30px;}
+#header|{min-height:96px;width:961px;}
+#TW9W54|fgcol008|{min-height:280px;margin-top:3px;margin-left:10px;width:247px;font-size:13px;}
+#primaryNav &gt; li.selected &gt; a|fgcol002|zzzzbrsty|bluegrad001|{padding-top:0px;margin-left:-1px;border-width:3px;border-left-width:0px;padding-bottom:0px;}
+#wFF0mo|{margin-top:30px;margin-left:20px;}
+.childs-3#Row_2&gt;DIV:nth-child(2)|{width:40.198123044838376%;}
+#primaryNav|brsty008|bgcol011|{min-height:35px;border-color:#000000;margin-top:25px;margin-left:606px;border-width:0px;width:338px;font-family:Arial;font-size:14px;}
+#c_wgye74|{margin-top:0px;}
+#wtjiSe|{min-height:498px;}
+#T9fPyu|fgcol001|{min-height:44px;margin-top:17px;margin-left:10px;width:auto;font-size:20px;}
+#w1TlV8|{margin-left:10px;margin-right:10px;}
+#w5vIOW|VlCkb0mF|{margin-top:15px;margin-left:10px;margin-right:10px;}
+#T5Le17|fgcol008|{margin-top:7px;margin-left:1px;}
+#INyC4W|{height:299px;margin-top:0px;margin-left:0px;width:960px;}
+#IRDLdO|{height:41px;margin-top:7px;margin-left:25px;width:205px;}
+#wA2M6t|{min-height: ;margin-top:5px;}
+#Tu5udT|{padding-right:10px;}
+#T6Hs3f|{min-height:22px;width:240px;}
+.childs-3#Row_2&gt;DIV:nth-child(3)|{width:28.1021897810219%;}
+#lDxEx4|{min-height:340px;margin-top:0px;}
+#wWkiJw|VlCkb0mF|{min-height:22px;margin-left:10px;margin-top:15px;}
+#weHA3Q|{margin-left:20px;}
+#wKbMr3|VlCkb0mF|{min-height:254px;margin-right:10px;padding:5px;}
+.childs-3#Row_2&gt;DIV:nth-child(1)|{width:31.69968717413973%;}
+#primaryNav &gt; li &gt; a|{border-radius:5px;padding-top:2px;margin-left:1px;margin-right:1px;padding-bottom:2px;}
+#Tmid7U|brsty008|{border-color:#010814;border-top-left-radius:0px;border-left-width:0px;border-bottom-width:2px;border-right-width:0px;padding-bottom:5px;border-top-width:0px;}
+#TmXAtQ|{min-height:27px;width:230px;}
+#woHFsu|{margin-top:0px;margin-left:1px;}
+#TmPnYU|fgcol002|zzzzbgcol|{min-height:53px;margin-top:10px;margin-left:13px;width:220px;text-align:left;font-size:21px;}
+#wBo5rB|VlCkb0mF|{margin-top:24px;margin-left:0px;}
+#TycGeG|{margin-top:0px;margin-left:0px;}
+#IeU84q|{margin-top:39px;margin-left:0px;}
+#wgye74|bgcol015|
+#wj3XbB|{min-height:31px;}
+#wKi8ZB|{margin-top:0;margin-left:0;}
+#w1HeH8|{min-height:115px;margin-top:0;margin-left:0;}
+#wXSiBn|VlCkb0mF|{margin-bottom:0px;margin-top:15px;margin-left:10px;margin-right:10px;margin:10px;}
+#whSnMJ|VlCkb0mF|{min-height:22px;padding-top:0px;margin-left:10px;}
+#weSy4D|{margin-left:30px;}
+</siteStyles>
+</in.hashed.longtail.model.Site>

@@ -1,0 +1,99 @@
+<template>
+  <templateName>Blank Template 2</templateName>
+  <previewImage>http://content.hashedin.com/static/img/previews/blank.jpg</previewImage>
+  <sampleSite id="1">
+  <domain>blank2.templates.local.designoncloud.com</domain>
+  <theme id="2" name="theme_slick,theme_LucidaSans,theme_bar-outset,theme_stacked-fields,theme_Light-Green"/>
+  <active>true</active>
+  <claimed>true</claimed>
+  <cloneable>false</cloneable>
+  <creationDate class="sql-timestamp" id="3">2011-11-04 22:51:15.0</creationDate>
+  <lastModifiedDate class="sql-timestamp" id="4">2011-11-04 23:51:19.0</lastModifiedDate>
+  <published>true</published>
+  <industry>Others</industry>
+  <pages id="5">
+    <page id="6" showOnNav="true" path="/" name="Home" title="Homepage">
+      <widgetInstance id="7" uuid="Body" mode="content-area">
+        <widget-tree id="8" uuid="Row_1" mode="section">
+          <widget-tree id="9" uuid="Col_1_1" mode="column">
+            <widget-tree id="10" uuid="wVmpPs">
+              <data-text id="11" uuid="TBT1A3" priority="3">
+                <text>Title Heading</text>
+              </data-text>
+              <data-text id="12" uuid="TKP1od">
+                <text>This is just sample text. Click to edit it and replace with the some meaningful content about you, your profession, your business or just about anything.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+        <widget-tree id="13" uuid="Row_2" mode="section">
+          <widget-tree id="14" uuid="Col_2_1" mode="column"/>
+          <widget-tree id="15" uuid="Col_2_2" mode="column">
+            <widget-tree id="16" uuid="wKZa0W">
+              <data-form id="17" uuid="Fn0mA1" formName="contactus">
+                <field id="18" uuid="fHppnw" label="Name" required="true" helpText="Enter your full name" fieldType="name"/>
+                <field id="19" uuid="fW0y3j" label="Email" required="true" helpText="Enter your email id" fieldType="email"/>
+                <field id="20" uuid="f9MSvh" label="Phone_No" helpText="Enter your phone (Optional)" fieldType="phone"/>
+                <field id="21" uuid="fAiMD1" label="Comments" required="true" helpText="Enter your comments/feeback" fieldType="comments"/>
+                <field id="22" uuid="fcrbNb" label="Submit Your Request" fieldType="submit"/>
+              </data-form>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="23" uuid="Col_2_3" mode="column"/>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+    <page id="24" showOnNav="true" path="/about/" name="About" title="About Company">
+      <widgetInstance id="25" uuid="WlayoHF7Ti" mode="content-area">
+        <widget-tree id="26" uuid="WlayoQ613i" mode="section">
+          <widget-tree id="27" uuid="Wlayogk6b1" mode="column">
+            <widget-tree id="28" uuid="wcFKH8">
+              <data-text id="29" uuid="TW1F76" priority="3">
+                <text>About Company&lt;br&gt;</text>
+              </data-text>
+              <data-text id="30" uuid="TYRWig">
+                <text>This is just sample text. Click to edit it and replace with the some meaningful content about you, your profession, your business or just about anything.</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+    <page id="31" showOnNav="true" path="/contact/" name="Contact" title="Contact Us">
+      <widgetInstance id="32" uuid="WlayoGTtgE" mode="content-area">
+        <widget-tree id="33" uuid="Wlayo8ws06" mode="section">
+          <widget-tree id="34" uuid="WlayoRpOmu" mode="column">
+            <widget-tree id="35" uuid="wrSoGd">
+              <data-text id="36" uuid="ToLZZS" priority="3">
+                <text>Contact Address&lt;br&gt;</text>
+              </data-text>
+              <data-text id="37" uuid="TmrAZg">
+                <text>&lt;span style=&quot;font-weight: bold;&quot;&gt;Campany Name&lt;/span&gt;&lt;br&gt;Door No., Building Name,&lt;br&gt;Street Address,&lt;br&gt;Locality Name, Landmark,&lt;br&gt;City - Postal Code&lt;br&gt;State, Country&lt;br&gt;Phone: 012 345 6789&lt;br&gt;</text>
+              </data-text>
+            </widget-tree>
+          </widget-tree>
+          <widget-tree id="38" uuid="wMOfmw" mode="column">
+            <widget-tree id="39" uuid="wBYH04">
+              <data-form id="40" uuid="FnnvrD" formName="contactus"/>
+            </widget-tree>
+          </widget-tree>
+        </widget-tree>
+      </widgetInstance>
+      <site reference="1"/>
+    </page>
+  </pages>
+  <data-image id="41" uuid="siteLogoImg"/>
+  <data-text id="51" uuid="siteNameText"/>
+  <siteStyles id="54">
+.content-area|{padding:20px;}
+#primaryNav|{margin-top:83px;width:958px;}
+#siteLogoImg|{height:45px;margin-top:20px;margin-left:15px;width:140px;}
+.childs-2#Wlayo8ws06&gt;DIV:nth-child(1)|{width:44.010416666666664%;}
+#header|{min-height:120px;}
+#layoutArea|{box-shadow:0 0 5px #000000;-webkit-box-shadow:0 0 5px #000000;-moz-box-shadow:0 0 5px #000000;}
+.childs-2#Wlayo8ws06&gt;DIV:nth-child(2)|{width:55.989583333333336%;}
+</siteStyles>
+  </sampleSite>
+</template>

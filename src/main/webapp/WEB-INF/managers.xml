@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:lang="http://www.springframework.org/schema/lang"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/lang 
+        http://www.springframework.org/schema/lang/spring-lang-3.0.xsd" default-autowire="byType">
+
+    <bean class="in.hashed.longtail.util.SystemEnvPropertyConfigurer">
+      <property name="propertyName" value="project" />
+    </bean>
+
+	<bean id="dataManager" class="in.hashed.longtail.model.manager.DataManager"/>
+	<bean id="userManager" class="in.hashed.longtail.model.manager.UserManager"/>
+    <bean id="pageManager" class="in.hashed.longtail.model.manager.PageManager"/>
+	<bean id="fontManager" class="in.hashed.longtail.model.manager.FontManager"/>
+    <bean id="quickStylesManager" class="in.hashed.longtail.model.styles.QuickStylesManager"/>
+	<bean id="siteTemplate" class="in.hashed.longtail.model.manager.SiteTemplateManager"/>
+	<bean id="cssPresetManager" class="in.hashed.longtail.model.manager.CSSPresetManager"/>
+	<bean id="cssPresetBundleManager" class="in.hashed.longtail.model.manager.CSSSelectorBundleManager"/>
+	<bean id="siteManager" class="in.hashed.longtail.model.manager.SiteManager"/>
+	<bean id="widgetTemplateManager" class="in.hashed.longtail.model.manager.WidgetTemplateManager"/>
+    <bean id="pageTemplateManager" class="in.hashed.longtail.model.manager.PageTemplateManager"/>
+    <bean id="siteService"  class="in.hashed.longtail.web.SiteService"/>
+    <bean id="stylesService"  class="in.hashed.longtail.web.StylesService"/>
+  
+	<bean id="elementFactory" class="in.hashed.longtail.model.manager.ElementFactory"/>
+	<bean id="themeManager" class="in.hashed.longtail.model.manager.ThemeManager">
+		<property name="staticLocation" value="${static.location}"/>
+	</bean>
+	
+	<bean id="themeCollectionManager" class="in.hashed.longtail.model.manager.ThemeCollectionManager"/>
+		
+	<bean id="siteStylesManager" class="in.hashed.longtail.model.manager.SiteStylesManager"/>	
+
+	<bean id="formsManager" class="in.hashed.longtail.model.manager.FormsManager"/>	
+	<bean id="formDataManager" class="in.hashed.longtail.model.manager.FormDataManager"/>
+
+	<bean id="dataItemManager" class="in.hashed.longtail.model.manager.DataItemManager">
+	</bean>
+	
+	<bean id="imageManager" class="in.hashed.longtail.model.manager.ImageManager">
+		<property name="folder" value="."/>	
+	</bean>
+	
+	<bean id="widgetDataAccessor" class="in.hashed.longtail.model.manager.WidgetDataAccessor">	
+	</bean>
+
+	<bean id="passwordEncoder" class="org.springframework.security.authentication.encoding.Md5PasswordEncoder ">
+	</bean>
+	
+	<bean id="dataSerializer" class="in.hashed.longtail.data.DataSerializer" autowire="constructor" init-method="init">
+	</bean>
+  	
+  	<!-- freemarker config -->
+	<bean id="freemarkerConfig" class="in.hashed.longtail.web.FreeMarkerConfigurer" init-method="init" autowire="no">
+		<property name="templateLoaderPaths">
+			<list>
+				<value>/WEB-INF/freemarker/</value>
+				<value>/static/css/</value>
+			</list>
+		</property>
+		<property name="sharedContext">
+			<map>
+				<entry key="accessor" value-ref="widgetDataAccessor"/>
+			</map>
+		</property>
+	</bean>
+	
+	<bean id="cssEngine" class="in.hashed.longtail.web.CSSEngine">
+		<constructor-arg value="${static.location}" />
+		<property name="cssPresetManager" ref="cssPresetManager"/>
+	</bean>
+	
+	<bean id="factoryMap" class="in.hashed.longtail.web.FactoryRegistry" factory-method="getInstance">
+  	</bean>
+
+  <bean id="siteInfo" class="in.hashed.longtail.model.SiteInfo">
+  	  <property name="siteDomain" value="${site.domain}" />
+	  <property name="port" value="${site.port}" />
+	  <property name="siteURL" value="${site.url}" />
+	  <property name="staticContentBaseURL" value="${site.staticContentBaseUrl}" />
+	  <property name="contentBaseURL" value="${site.contentBaseUrl}" />
+      <property name="imageServer" value="${site.imageServerUrl}"/>	  	  
+  </bean>
+	
+	<bean id="authenticationService" class="in.hashed.longtail.services.AuthenticationService">
+		<property name="urlSigningSecretKey" value="$%2DZA012krt(x,.{*-dada" />
+		<property name="sessionIDEncryptionKey" value="$%2DZA012krt(x,.{*-dada" />
+	</bean>
+
+</beans>

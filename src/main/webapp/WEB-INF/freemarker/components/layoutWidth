@@ -1,0 +1,8 @@
+<#assign i=0 />
+<#list req.layoutWidth as g>
+    <div class="canvas-layout yui3-u" data-uuid="${g.uuid!}"
+         style="background-position: -${i*55-3}px 0; margin: 5px 10px;"
+         onclick="Y.fire('css-preset:selected', {node: this, cssId: '${g.uuid}', cssText: '${g.cssStyles?js_string}'})">
+    </div>
+    <#assign i=i+1 />
+</#list>

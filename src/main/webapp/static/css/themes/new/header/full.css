@@ -1,0 +1,6 @@
+@import "../../../lib.less";
+
+.header {
+	width: auto;
+	margin: 0;
+}

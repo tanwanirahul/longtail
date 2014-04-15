@@ -1,0 +1,94 @@
+@import "../lib.less"; 
+
+html {
+    background: transparent;
+}
+
+body {
+    .default-typo;  
+}
+
+.rich-text {
+    padding: 0.5em;  
+}
+
+.rich-text ol,.rich-text ul,.rich-text dl {
+	margin-left:2em;
+}
+.rich-text ol li {
+	list-style: decimal outside;	
+}
+.rich-text ul li {
+	list-style: disc outside;
+}
+.rich-text dl dd {
+	margin-left:1em;
+}
+.rich-text th,.rich-text td {
+	border:1px solid #000;
+	padding:.5em;
+}
+.rich-text th {
+	font-weight:bold;
+	text-align:center;
+}
+.rich-text caption {
+	margin-bottom:.5em;
+	text-align:center;
+}
+
+body.rich-text, html.rich-text {
+    margin: 0px;
+    padding: 0px;
+    background: none;
+}
+
+body.rich-text > *:FIRST-CHILD {
+    margin: 0px !important;
+}
+
+.widget-container {
+  position: relative;  
+}
+
+.top, .bottom {
+  height: 0px;
+  overflow: visible;
+}
+
+.tr, .tl,.br, .bl {
+  position: absolute;
+  z-index: 1;
+}
+
+.tr {
+  right: 0;
+  top: 0;  
+}
+
+.tl {
+  left: 0;
+  top: 0;  
+}
+
+.br {
+  right: 0;
+  bottom: 0;  
+}
+
+.bl {
+  left: 0;
+  bottom: 0;  
+}
+
+/** Styles for top bar **/
+@import "../user-profile.css";
+
+#topBar #accountActions > div > a > span.user-name, #topBar #accountActions > div > a > span.user-name:visited {
+    color: #FFFFFF;
+    padding-right: 8px;
+}
+
+#topBar #accountActions > div.help-link {
+    display: none;
+}

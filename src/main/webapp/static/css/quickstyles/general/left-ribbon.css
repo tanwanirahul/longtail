@@ -1,0 +1,31 @@
+.CLASS-NAME {
+  background-color: #999999;
+  border-radius: 3px 0 0 0;
+  box-shadow: 0px 2px 4px #888888;
+  color: #555555;
+  text-shadow: 0px 1px 2px #bbbbbb;
+}
+
+.CLASS-NAME:after {
+  border-color: #666666 #666666 transparent transparent;
+  border-style: solid;
+  border-width: 5px 10px;
+  content: ' ';
+  height: 0;
+  left: 0px;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+
+.CLASS-NAME:before {
+  border-color: #999999 #999999 #999999 transparent;
+  border-style: solid;
+  border-width: 1.1em 25px;
+  content: ' ';
+  height: 0;
+  left: -50px;
+  position: absolute;
+  top: 10px;
+  width: 20px;
+}

@@ -1,0 +1,288 @@
+@import "editors.css";
+@import "lib.less";
+@import "treeview-classic.css";
+@import "top-edit-bar.css";
+@import "components/spinner-component.css";
+@import "components/overlays.css";
+@import "components/skin.css";
+
+#editActionBar {
+  display: block;
+}
+
+html.preview-mode {
+  padding-top: 0;
+}
+
+input[type=file] {
+  color: blue;
+}
+
+input[name=img_url] {
+  width: 48%;
+}
+
+#imageUploadForm input[type=submit], .preset-form-create.ajax-form input[type=submit] {
+  padding: 2px 4px;
+}
+
+input[type=color] {
+  border: none;
+  height: 17px;
+  width: 55px;
+}
+
+.gray-flat-button {
+  background-color: #4c4c4c;
+  border: none;
+  color: #ccc;
+  .border-radius(3px);
+}
+
+.gray-flat-button.selected {
+  .linear-gradient-with-fallback(#ffffff, #d9d8d8);
+  color: #000;
+}
+
+.empty-content-widget {
+  font: 12px/1.7 "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+}
+.empty-content-widget:HOVER {
+  opacity: 1;
+}
+
+.empty > .empty-content-widget {display: block;}
+.empty-content-widget .edit-overlay {visibility:hidden;}
+
+#Content_Body > .widget-container > .layout-widget > .empty-content-widget {
+  display: none;
+}
+
+.empty-content-widget > .sample-widget {
+  background: url("../img/widgets/widget-icons-new.png") transparent;
+  position: relative;
+  .inline-block();
+  height: 56px;
+  width: 56px;
+  padding: 0px;
+  margin: 5px;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.empty-content-widget > .sample-widget:HOVER {
+  opacity: 1;
+}
+
+.empty-content-widget .empty-content-widget-hd {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #FFFFFF, 0 -1px 3px #FFFFFF;
+}
+.empty-content-widget .empty-content-widget-ft { margin: 0.5em 1em; line-height: 1; }
+.empty-content-widget a {
+  color: #E4E4E4 !important;
+  text-decoration: none !important;
+  text-shadow: 1px 1px 1px #000000, 0 0 3px #000000 !important;
+}
+.empty-content-widget a:hover { text-decoration: underline; }
+.empty-content-widget .widget-sprite-content-with-heading { background-position: -21px -22px; }
+.empty-content-widget .widget-sprite-image { background-position: -121px -22px; }
+.empty-content-widget .widget-sprite-content  { background-position: -21px -222px; }
+.empty-content-widget .widget-sprite-content-and-image { background-position: -121px -222px; }
+#widgetGallery .widget-sprite-contactus { background-position: -214px -217px }
+#widgetGallery .widget-sprite-html-content  { background-position: -315px -217px }
+
+/** CSS for list pagination - begins **/
+#editActionBar .list-pagination {
+  color: #FFFFFF;
+  height: 15px;
+  padding: 3px 5px 2px;
+}
+
+#editActionBar .list-pagination .heading {
+  .inline-block();
+  margin-right: 20px;
+}
+
+#editActionBar .list-pagination .page-links {
+  float: right;
+}
+
+#editActionBar .list-pagination .page-links span {
+  background-color: #CCCCCC;
+  color: #000000;
+  padding: 1px 3px;
+}
+
+#editActionBar .list-pagination .page-links a {
+  padding: 1px 3px;  
+}
+
+#editActionBar .list-pagination .page-links a:HOVER {
+  background-color: #AAAAAA;
+  color: #000000 !important;
+}
+
+#editActionBar .list-pagination .tags-list {
+  .inline-block();
+}
+
+#editActionBar .list-pagination .tag-group {
+  background-color: #999999;
+  border: 1px solid #888888;
+  .inline-block();
+  .border-radius(3px);
+  margin: 0 5px;
+}
+
+#editActionBar .list-pagination .tag-group .tag-item {
+  border-right: 1px solid #444444;
+  .box-shadow(0 1px 1px #BBBBBB inset);
+  padding: 0 15px;
+  text-shadow: 0 1px 0 #000000;
+}
+#editActionBar .list-pagination .tag-group .tag-item.last, .list-pagination .tag-group .tag-item.last:HOVER { border: none; }
+
+#editActionBar .list-pagination .tag-group a.tag-item {
+  .linear-gradient-with-fallback(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+}
+
+#editActionBar .list-pagination .tag-group a.tag-item:HOVER, .list-pagination .tag-group span.tag-item {
+  background: #505050;
+  border-right: 1px solid #444444;
+  .box-shadow(0 1px 1px #999999 inset);
+}
+/** CSS for list pagination - ends **/
+
+/** Used in image gallery **/
+.widget-edit-actions-bar input[type="button"] {
+  background-image: url("../img/icons-edit.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+  color: transparent;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.widget-edit-actions-bar .prev-button {background-position: 0px -201px;}
+.widget-edit-actions-bar .prev-button:HOVER {background-position: 0px -221px;}
+
+.widget-edit-actions-bar .add-new-button {background-position: 0 -241px;}
+.widget-edit-actions-bar .add-new-button:HOVER {background-position: 0 -261px;}
+
+.widget-edit-actions-bar .delete-button {background-position: 0 -1px;}
+.widget-edit-actions-bar .delete-button:HOVER {background-position: 0 -21px;}
+
+.widget-edit-actions-bar .next-button {background-position: 0 -161px;}
+.widget-edit-actions-bar .next-button:HOVER {background-position: 0 -181px;}
+
+.yui3-group-button input[type="button"] {
+  border : #BABABA 2px solid;
+  color: #000000;
+  font-size: 14px;
+  .border-radius( 7px);
+  padding : 2px;
+  margin-right: 5px;
+  .linear-gradient-with-fallback(#E6E6E6, #ADACA8);
+}
+
+.yui3-group-button input[type="button"]:HOVER {
+  .linear-gradient-with-fallback(#B3B3B3, #8A8985);
+}
+
+.widget-settings {
+  color: #CCCCCC;
+}
+
+.preview-mode .widget-settings,
+.preview-mode .resizer,
+.preview-mode .yui-h-slider,
+.preview-mode .floating-button,
+.preview-mode .status-bar,
+.preview-mode .state-disabled,
+.preview-mode .addSectionButton,
+.preview-mode .widget-edit-actions-bar,
+.preview-mode #inlineEditor,
+.preview-mode #color-picker-container,
+.preview-mode .yui3-styleframe,
+.preview-mode .yui3-overlay-text,
+.preview-mode .yui3-overlay-image,
+.preview-mode .empty-content-widget,
+.preview-mode .edit-link
+{
+  display: none !important;
+}
+
+.edit-mode .edit-link {
+  display: none;
+}
+
+/** SPINNER CSS **/
+
+/** Styles for manage pages overlay - begins **/
+.page-form-title {
+  color: #E0E0E0;
+  display: block;
+  font-size: 1.04em;
+  font-weight: bold;
+  margin: 5px 10px 0;
+}
+
+.page-form {
+  border-left: 1px solid #CCCCCC;
+  padding: 5px 10px 0;
+}
+
+.page-form-textbox {
+  border: 0 none;
+  margin: 2px 0;
+}
+
+.page-action-btn {
+  float: right;
+  padding: 3px 10px;
+  margin: 10px 0;
+}
+
+.edit-html-text-area {
+  position: absolute;
+  height: 100%; width: 100%;
+  display: block;
+}
+
+.html-text:HOVER:after {
+  content: "Edit";
+  z-index: 100;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  display: block;
+  padding: 3px 8px;
+  background: #000;
+  .linear-gradient(#666, #555);
+  .border-radius(4px);
+  border: #eee 1px solid;
+  cursor: pointer;
+  color: #eee;
+  .opacity(0.4);
+}
+
+.html-text:after:HOVER{
+  .opacity(1);
+}
+
+#publishForm fieldset .validation01 {
+  display: block;
+}
+
+#topBar {visibility: visible;}
+#topBar a, #topBar a:VISITED, #topBar a:ACTIVE {color: inherit; text-decoration: none;}
+#topBar form {background: transparent;}
+
+input[type="button"], input[type="submit"], input[type="reset"], button {
+  padding: 0px 4px;
+}

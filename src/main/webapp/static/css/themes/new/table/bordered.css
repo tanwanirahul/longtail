@@ -1,0 +1,26 @@
+table {
+  font-size: 1em;
+  width: 100%;
+}
+th {
+  background: #E0E0FF;
+  border: 1px solid #CCCCCC;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  padding: 0.5em 1em;
+  text-align: center;
+}
+tfoot td {
+  border: 1px solid #E0E0E0;
+  font-size: 0.9em;
+  font-style: italic;
+  padding: 0.5em 1em;
+  text-align: right;
+}
+tbody tr:hover {
+  background: #F0F0F0 !important;
+}
+td {
+  border: 1px solid #E0E0E0;
+  padding: 0.5em 1em;
+}

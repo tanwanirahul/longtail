@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+  xmlns:beans="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security-3.0.xsd" default-autowire="byType">
+
+  <global-method-security secured-annotations="enabled"></global-method-security>
+
+  <http entry-point-ref="myAuthenticationEntryPoint" access-decision-manager-ref="accessDecisionManager" auto-config="true">
+    <intercept-url pattern="/login*" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/resetPassword" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/requestResetPassword" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/site/createAccountAndSite" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/site/createAccountAndBlankSite" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/site/createAccountAndCloneSite" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/site/createAccount" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/site/createForWizard" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/site/create" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/data/add" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+    <intercept-url pattern="/lt_admin/services/styles/preview" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
+
+    <intercept-url pattern="/lt_admin/dashboard" access="ROLE_GLOBAL_USER"/>
+    <intercept-url pattern="/lt_admin/publish" access="ROLE_GLOBAL_USER"/>
+    <intercept-url pattern="/lt_admin/profile" access="ROLE_GLOBAL_USER"/>
+    <intercept-url pattern="/lt_admin/services/authenticate" access="ROLE_GLOBAL_USER" />
+    <intercept-url pattern="/lt_admin/services/makeYours" access="ROLE_GLOBAL_USER" />
+    <intercept-url pattern="/lt_admin/services/site/publish" access="ROLE_GLOBAL_USER" />
+    <intercept-url pattern="/lt_admin/services/user/profile" access="ROLE_GLOBAL_USER" />
+
+    <intercept-url pattern="/lt_admin/services/**" access="ROLE_SITE_ADMIN, ROLE_SITE_EDITOR, ROLE_GLOBAL_ADMIN" />
+    <intercept-url pattern="/lt_admin/services/changePassword" access="ROLE_GLOBAL_USER, ROLE_SITE_ADMIN, ROLE_SITE_EDITOR"/>
+    
+    <intercept-url pattern="/lt_edit/**" access="ROLE_SITE_ADMIN, ROLE_SITE_EDITOR, ROLE_GLOBAL_ADMIN"/>
+
+    <intercept-url pattern="/debug/**" access="ROLE_GLOBAL_ADMIN" />
+    <intercept-url pattern="**/snapshot" access="ROLE_GLOBAL_ADMIN" />
+    <intercept-url pattern="**/clearSnapshot" access="ROLE_GLOBAL_ADMIN" />
+    <intercept-url pattern="**/image/bulk-upload" access="ROLE_GLOBAL_ADMIN" />
+    <intercept-url pattern="/static/**" filters="none"/>
+    
+    <form-login authentication-failure-url="/login?errors=login" />
+    <remember-me services-ref="crossDomainRememberMe" key="A-Very-Secure-Key-^fa()kpDAFhgad#@!#9)_=djafk!@dafMBZ4323" />
+    
+    <!--
+      Put this filter before any Spring filters, so that current site can be setup properly
+     -->
+    <custom-filter position="FIRST" ref="threadContextFilter"></custom-filter>
+  </http>
+
+  <beans:bean id="crossDomainRememberMe" class="in.hashed.longtail.services.RememberMeCrossDomainServices">
+    <beans:property name="userDetailsService" ref="userManager"/>
+    <beans:property name="key" value="A-Very-Secure-Key-^fa()kpDAFhgad#@!#9)_=djafk!@dafMBZ4323"/>
+    <beans:property name="tokenValiditySeconds" value="1296000"/>
+    <beans:property name="domain" value=".${site.domain}"/>
+    <beans:property name="cookieName" value="${site.rememberMeCookieName}"/>
+  </beans:bean>
+
+  <beans:bean id="myAuthenticationEntryPoint" class="in.hashed.longtail.web.MyAuthenticationProcessingFilterEntryPoint">
+    <beans:property name="loginFormUrl" value="/login" />
+    <beans:property name="siteInfo" ref="siteInfo" />
+  </beans:bean>
+
+  <authentication-manager alias="theAuthenticationManager">
+    <authentication-provider ref="daoAuthenticationProvider"></authentication-provider>
+  </authentication-manager>
+
+  <beans:bean id="daoAuthenticationProvider"
+      class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+    <beans:property name="userDetailsService" ref="userManager"/>
+    <beans:property name="saltSource" ref="saltSource"/>
+    <beans:property name="passwordEncoder" ref="passwordEncoder"/>
+  </beans:bean>
+
+  <beans:bean id="saltSource" class="org.springframework.security.authentication.dao.ReflectionSaltSource">
+    <beans:property name="userPropertyToUse" value="salt"/>
+  </beans:bean>
+
+  <!--
+    Define AccessDesisionManager as AffirmativeBased, which means that if any voter says yes, access is granted
+  -->
+  <beans:bean id="accessDecisionManager" class="org.springframework.security.access.vote.AffirmativeBased">
+    <beans:property name="decisionVoters">
+      <beans:list>
+        <!--  checks if the user has access at the site level -->
+        <beans:ref bean="siteRoleVoter" />
+        <!--  checks if the user has access at a global level i.e. admin user -->
+        <beans:ref bean="globalRoleVoter" />
+        <beans:bean class="org.springframework.security.access.vote.AuthenticatedVoter" />
+      </beans:list>
+    </beans:property>
+  </beans:bean>
+
+  <!--
+    Will check for global roles, and more importantly, will NOT check for site level roles.
+   -->
+  <beans:bean id="globalRoleVoter" class="org.springframework.security.access.vote.RoleVoter">
+    <beans:property name="rolePrefix" value="ROLE_GLOBAL_"/>
+  </beans:bean>
+
+  <!--
+    Define a custom Voter that checks if a resource is protected with ROLE_SITE_*,
+    then a check is made to see if the user has access to the current site
+  -->
+  <beans:bean id="siteRoleVoter" class="in.hashed.longtail.services.SiteRoleVoter"/>
+
+  <!--
+    Custom filter to set current site name and other parameters in a ThreadLocal variable
+   -->
+  <beans:bean id="threadContextFilter" class="in.hashed.longtail.web.ThreadContextFilter">
+    <beans:property name="siteInfo" ref="siteInfo"/>
+  </beans:bean>
+</beans:beans>

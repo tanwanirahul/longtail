@@ -1,0 +1,26 @@
+.canvas {
+  background-color: #262630;
+  color: #D3E9BA;
+}
+.layoutArea {}
+.header {
+  background-color: #FFFFFF;
+}
+h1, .pr-ft-heading-1,
+h2, .pr-ft-heading-2,
+h3, .pr-ft-heading-3,
+h4, .pr-ft-heading-4,
+h5, .pr-ft-heading-5,
+h6, .pr-ft-heading-6 {
+  color: #0BD8F7;
+}
+p, .pr-ft-normal-text {
+  color: #D3E9BA;
+}
+form {}
+.button {
+  background-color: #F9924F;
+}
+/**
+#primaryNav {}
+**/

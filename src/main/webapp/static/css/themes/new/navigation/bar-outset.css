@@ -1,0 +1,34 @@
+.el-navigation-data-item {
+  height: 2.5em;
+  text-align: right;
+}
+.el-navigation-data-item > li {
+  height: 100%;
+  padding: 0 0.5em;
+}
+.el-navigation-data-item > li > a {
+  -moz-border-radius: 2em;
+  -webkit-border-radius: 2em;
+  border-radius: 2em;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  line-height: 2em;
+  padding: 0 1em;
+  text-decoration: none;
+}
+.el-navigation-data-item > li > a:visited {
+  color: #ffffff;
+}
+.el-navigation-data-item > li > a:hover, .el-navigation-data-item > li.selected > a {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: -webkit-gradient(linear, center top, center bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.2)));
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  -moz-box-shadow: inset 0 1px 0 #ffffff, 0 1px 3px #000000;
+  -webkit-box-shadow: inset 0 1px 0 #ffffff, 0 1px 3px #000000;
+  box-shadow: inset 0 1px 0 #ffffff, 0 1px 3px #000000;
+}
